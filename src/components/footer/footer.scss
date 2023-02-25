@@ -1,0 +1,13 @@
+$color-primary: #2c3e50;
+$color-white: #fff;
+footer {
+    background-color: $color-primary;
+    color: $color-white;
+    padding: 1rem;
+    margin-bottom: 0%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}

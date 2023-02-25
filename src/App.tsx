@@ -1,25 +1,23 @@
-import logo from './assets/logo.svg';
-import styles from './App.module.scss';
+import './App.module.scss';
+import UMLDiagramGenerator from './components/graphGenerator/graphGenerator';
+import Header from './components/header/header';
+import Footer from './components/footer/footer';
 
 function App() {
-    return (
-        <div className={styles.App}>
-            <header className={styles['App-header']}>
-                <img src={logo} className={styles['App-logo']} alt="logo" />
-                <p>
-                    Edit <code>src/App.tsx</code> and save to reload.
-                </p>
-                <a
-                    className={styles['App-link']}
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
-        </div>
-    );
+  const graphWrapperStyle = {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  };
+  return (
+    <>
+      <Header />
+      <div id="graphWrapper" style={graphWrapperStyle}>
+        <UMLDiagramGenerator />
+      </div>
+      <Footer />
+    </>
+  );
 }
 
 export default App;
