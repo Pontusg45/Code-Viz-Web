@@ -2,7 +2,7 @@ import { TreeItem, TreeView } from '@mui/lab';
 import { Checkbox, FormControlLabel } from '@mui/material';
 import React from 'react';
 import { ChevronRight, ExpandMore, Visibility, VisibilityOff } from '@mui/icons-material';
-import { ClassInterface, FileInterface, Files, LightFunctionInterface } from '../../interfaces/interface';
+import { ClassInterface, FileInterface, Files, LightFunctionInterface } from '../../../interfaces/interface';
 
 
 export default function RecursiveTreeView(
