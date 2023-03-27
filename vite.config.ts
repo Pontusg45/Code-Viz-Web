@@ -4,7 +4,7 @@ import reactRefresh from '@vitejs/plugin-react-refresh'
 import { chunkSplitPlugin } from 'vite-plugin-chunk-split';
 
 export default defineConfig({
-  base: '/code-viz-web/',
+  base: '/Code-Viz-Web/',
   plugins: [
     reactRefresh(),
     chunkSplitPlugin()
