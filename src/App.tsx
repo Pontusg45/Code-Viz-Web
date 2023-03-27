@@ -29,7 +29,7 @@ function App() {
     const formData = new FormData();
     if (!file) return;
     formData.append('file', file);
-    const response = await fetch('http://localhost:8080/parse', {
+    const response = await fetch('http://78.141.233.225:8080/parse', {
       method: 'POST',
       body: formData
     });
