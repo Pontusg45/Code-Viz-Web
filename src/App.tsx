@@ -1,22 +1,54 @@
 import './App.module.scss';
-import UMLDiagramGenerator from './components/graphGenerator/graphGenerator';
 import Header from './components/header/header';
-import Footer from './components/footer/footer';
+import React, { useEffect, useState } from 'react';
+import { Box } from '@mui/material';
+import { ReactFlowProvider } from 'reactflow';
+import UploadButton from './components/uploadButton';
+import GraphPage from './components/graph/GraphPage';
 
 function App() {
+  const [data, setData] = useState(null);
   const graphWrapperStyle = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
   };
+
+  function onFileChange(event: { target: { files: any; }; }) {
+    const file = event.target.files[0];
+    parseFile(file)
+      .then(result =>
+        setData(result)
+      )
+      .catch(err =>
+        console.log(err)
+      );
+  }
+
+  async function parseFile(file: any) {
+    const formData = new FormData();
+    if (!file) return;
+    formData.append('file', file);
+    const response = await fetch('http://localhost:8080/parse', {
+      method: 'POST',
+      body: formData
+    });
+    return await response.json();
+  }
+
   return (
-    <>
-      <Header />
-      <div id="graphWrapper" style={graphWrapperStyle}>
-        <UMLDiagramGenerator />
-      </div>
-      <Footer />
-    </>
+    <Box>
+      <Header onFileChange={onFileChange}/>
+      <ReactFlowProvider>
+        <Box style={graphWrapperStyle}>
+          {
+            data ?
+              <GraphPage data={data} /> :
+              null
+          }
+        </Box>
+      </ReactFlowProvider>
+    </Box>
   );
 }
 

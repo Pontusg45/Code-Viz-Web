@@ -1,10 +1,20 @@
 import React from 'react';
 import './header.scss';
-function Header(){
+import { Box, Button } from '@mui/material';
+import UploadButton from '../uploadButton';
+
+type HeaderProps = {
+    onFileChange: any;
+}
+
+function Header(props: HeaderProps) {
+    const { onFileChange } = props;
+
     return (
-        <div className="header">
+        <Box className="header">
         <h1>Code Viz</h1>
-        </div>
+            <UploadButton onFileChange={onFileChange}/>
+        </Box>
     )
 }
 

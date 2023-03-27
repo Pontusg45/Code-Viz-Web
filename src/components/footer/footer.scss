@@ -1,4 +1,4 @@
-$color-primary: #2c3e50;
+$color-primary: #282c34;
 $color-white: #fff;
 footer {
     background-color: $color-primary;
@@ -9,5 +9,6 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: 5vh;
 
 }
