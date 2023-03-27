@@ -1,0 +1,60 @@
+{
+    filesMap: {
+        "myapp" : {
+            "controller" : {
+                "fileName": "myapplication/controller/NotificationHandler.java",
+                "classes": {
+                    "NotificationHandler": {
+                        "id": "b0b2f2d6-e702-4ae8-8604-946ad1c7c65c",
+                        "functions": {
+                            "onMessageReceived": {
+                                "id": "3cd67069-82ea-4506-b590-c5469f134b3b",
+                                "className": "NotificationHandler",
+                                "file": "myapplication/controller/NotificationHandler.java",
+                                "name": "onMessageReceived"
+                            }
+                        },
+                        "fileName": "myapplication/controller/NotificationHandler.java",
+                        "name": "NotificationHandler"
+                    }
+                }
+            },
+            "model" : {
+                "fileName": "myapplication/model/Notification.java",
+                "classes": {
+                    "Notification": {
+                        "id": "b0b2f2d6-e702-4ae8-8604-946ad1c7c65c",
+                        "functions": {
+                            "onMessageReceived": {
+                                "id": "3cd67069-82ea-4506-b590-c5469f134b3b",
+                                "className": "NotificationHandler",
+                                "file": "myapplication/controller/NotificationHandler.java",
+                                "name": "onMessageReceived"
+                            }
+                        },
+                        "fileName": "myapplication/controller/NotificationHandler.java",
+                        "name": "NotificationHandler"
+                    }
+                }
+            },
+            "view" : {
+                "fileName": "myapplication/view/NotificationActivity.java",
+                "classes": {
+                    "NotificationActivity": {
+                        "id": "b0b2f2d6-e702-4ae8-8604-946ad1c7c65c",
+                        "functions": {
+                            "onMessageReceived": {
+                                "id": "3cd67069-82ea-4506-b590-c5469f134b3b",
+                                "className": "NotificationHandler",
+                                "file": "myapplication/controller/NotificationHandler.java",
+                                "name": "onMessageReceived"
+                            }
+                        },
+                        "fileName": "myapplication/controller/NotificationHandler.java",
+                        "name": "NotificationHandler"
+                    }
+                }
+            }
+        }
+    }
+}

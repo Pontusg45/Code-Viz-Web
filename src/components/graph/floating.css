@@ -1,0 +1,15 @@
+.floatingedges {
+    flex-direction: column;
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.lines {
+    stroke-width: 10;
+}
+
+.floatingedges .react-flow__handle {
+    opacity: 0;
+}
+  
