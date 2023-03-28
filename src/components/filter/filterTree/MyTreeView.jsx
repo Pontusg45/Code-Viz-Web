@@ -1,9 +1,7 @@
-import React from "react";
-import TreeView from "@material-ui/lab/TreeView";
-import MuiTreeItem from '@material-ui/lab/TreeItem';
-import { withStyles } from '@material-ui/styles';
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import ChevronRightIcon from "@material-ui/icons/ChevronRight";
+import React from 'react';
+import { TreeItem, TreeView } from '@mui/lab';
+import { ChevronRight, ExpandMore } from '@mui/icons-material';
+import { withStyles } from '@mui/material';
 
 const MyTreeView = (props) => {
   const { data, expanded, selected, handleToggle, handleSelect } = props;
@@ -23,8 +21,8 @@ const MyTreeView = (props) => {
 
   return (
     <TreeView
-      defaultCollapseIcon={<ExpandMoreIcon />}
-      defaultExpandIcon={<ChevronRightIcon />}
+      defaultCollapseIcon={<ExpandMore />}
+      defaultExpandIcon={<ChevronRight />}
       expanded={expanded}
       selected={selected}
       onNodeToggle={handleToggle}
@@ -37,12 +35,12 @@ const MyTreeView = (props) => {
 
 export default MyTreeView;
 
-const TreeItem = withStyles({
+/*const TreeItemS = withStyles({
   root: {
 
     '&.MuiTreeItem-root.Mui-selected > .MuiTreeItem-content .MuiTreeItem-label': {
-      backgroundColor: '#F5F5F5',
-    },
-  },
-})(MuiTreeItem);
+      backgroundColor: '#F5F5F5'
+    }
+  }
+})(TreeItem);*/
 

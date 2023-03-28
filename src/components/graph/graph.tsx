@@ -9,6 +9,7 @@ import ReactFlow, {
   MiniMap,
   Node,
   NodeChange,
+  ReactFlowProvider,
   useReactFlow
 } from 'reactflow';
 import 'reactflow/dist/style.css';
@@ -19,13 +20,15 @@ import resizableNode from './resizableNode';
 import './floating.css';
 import { Box, Button } from '@mui/material';
 import { CallTree } from '../../interfaces/interface';
+import GroupNode from './groupNode';
 
 const edgeTypes = {
   floating: FloatingEdge
 };
 
 const nodeTypes = {
-  resizableNode
+  resizableNode: resizableNode,
+  groupNode: GroupNode
 };
 
 const flowKey = 'example-flow';
@@ -60,7 +63,7 @@ export default function Graph(props: GraphProps) {
   const onEdgesChange = useCallback(
     (changes: EdgeChange[]) => {
       setEdges((eds) =>
-      applyEdgeChanges(changes, eds))
+        applyEdgeChanges(changes, eds));
       console.log(changes[0]);
     },
 
@@ -77,7 +80,7 @@ export default function Graph(props: GraphProps) {
 
   const onRestore = useCallback(() => {
     const restoreFlow = async () => {
-      const flow = JSON.parse(localStorage.getItem(flowKey) ?? "");
+      const flow = JSON.parse(localStorage.getItem(flowKey) ?? '');
 
       if (flow) {
         const { x = 0, y = 0, zoom = 1 } = flow.viewport;
@@ -90,38 +93,41 @@ export default function Graph(props: GraphProps) {
     restoreFlow();
   }, [setNodes, setViewport]);
   return (
-    <ReactFlow
-      nodes={nodes}
-      edges={edges}
-      onNodesChange={onNodesChange}
-      onEdgesChange={onEdgesChange}
-      elementsSelectable={true}
-      fitView
-      nodeTypes={nodeTypes}
-      edgeTypes={edgeTypes}
-      minZoom={0.01}
-      connectionLineComponent={FloatingConnectionLine}
-      onNodeClick={(event, node) => onNodeClick(node)}
-      attributionPosition='bottom-left'
-
-    >
-      <Box className="save__controls" sx={{
-        position: 'absolute',
-        right: "10px",
-        top: "10px",
-        zIndex: 4,
-        fontSize:"12px"
-      }}>
-        <Button key="save" onClick={onSave}>
-          Save
-        </Button>
-        <Button key="restore" onClick={onRestore}>
-          Restore
-        </Button>
-      </Box>
-      <Controls />
-      <Background />
-      <MiniMap zoomable pannable />
-    </ReactFlow>
+    <ReactFlowProvider>
+      <ReactFlow
+        nodes={nodes}
+        edges={edges}
+        onNodesChange={onNodesChange}
+        onEdgesChange={onEdgesChange}
+        elementsSelectable={true}
+        fitView
+        nodeTypes={nodeTypes}
+        edgeTypes={edgeTypes}
+        minZoom={0.01}
+        connectionLineComponent={FloatingConnectionLine}
+        onNodeClick={(event, node) => onNodeClick(node)}
+        proOptions={{
+          hideAttribution: true,
+        }}
+      >
+        <Box className='save__controls' sx={{
+          position: 'absolute',
+          right: '10px',
+          top: '10px',
+          zIndex: 4,
+          fontSize: '12px'
+        }}>
+          <Button key='save' onClick={onSave}>
+            Save
+          </Button>
+          <Button key='restore' onClick={onRestore}>
+            Restore
+          </Button>
+        </Box>
+        <Controls />
+        <Background />
+        <MiniMap zoomable pannable />
+      </ReactFlow>
+    </ReactFlowProvider>
   );
 }

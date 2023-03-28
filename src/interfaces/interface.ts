@@ -9,24 +9,27 @@ export interface CallTree {
   }
 }
 
+
 export interface Files {
-  [filename: string]: Files | ClassInterface;
-};
+  id: string;
+  children: {
+    [filename: string]: Files | ClassInterface;
+  }
+  type: 'package';
+}
 
 export interface ClassInterface {
-  name: string;
-  class: {
-    id: string;
-    functions: {
-      [functionName: string]: LightFunctionInterface
-    }
-    fileName: string;
-    name: string;
+  functions: {
+    [functionName: string]: LightFunctionInterface
   }
+  fileName: string;
+  name: string;
   x?: number;
   y?: number;
   width?: number;
   height?: number;
+  id: string;
+  type: 'class';
 }
 
 export interface FileInterface {

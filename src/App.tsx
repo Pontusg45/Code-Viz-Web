@@ -21,7 +21,7 @@ enum PaletteMode {
 }
 
 function App() {
-  const [data, setData] = useState(fakeData);
+  const [data, setData] = useState(null);
   const graphWrapperStyle = {
     display: 'flex',
     justifyContent: 'center',

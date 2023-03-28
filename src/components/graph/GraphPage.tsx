@@ -8,6 +8,7 @@ import { FunctionInterface, CallTree } from '../../interfaces/interface';
 import Graph from '../graph/graph';
 import { functionInfoWrapperStyle, totalWrapperStyle, treeWrapperStyle } from '../../styles/graphPageStyles';
 import PropTypes from 'prop-types';
+import TreeFilter from '../filter/filterTree/TreeFilter';
 
 interface FunctionInfo {
   name: string;
@@ -119,7 +120,7 @@ export default function GraphPage(props: Props) {
 
     const isSame = functionInfo.name === functionName;
 
-    const functions = files.functions as { [key: string]: FunctionInterface };
+    /*const functions = files.functions as { [key: string]: FunctionInterface };
 
     const newFunctionInfo = functions[functionName];
     if (newFunctionInfo) {
@@ -129,7 +130,7 @@ export default function GraphPage(props: Props) {
       } else {
         setDisplayFunctionInfo(!displayFunctionInfo);
       }
-    }
+    }*/
   };
 
   function onCheck() {
@@ -142,10 +143,56 @@ export default function GraphPage(props: Props) {
     setValue(newValue);
   };
 
+  const sampleData = {
+    id: "root",
+    name: "Parent",
+    children: [
+      {
+        id: "1",
+        name: "Child - 1",
+      },
+      {
+        id: "3",
+        name: "Child - 3",
+        children: [
+          {
+            id: "4",
+            name: "Child - 4",
+            children: [
+              {
+                id: "5",
+                name: "Child - 5",
+                children: [
+                  {
+                    id: "6",
+                    name: "Child - 6",
+                  },
+                  {
+                    id: "7",
+                    name: "Child - 7",
+                  },
+                  {
+                    id: "8",
+                    name: "Child - 8",
+                  },
+                  {
+                    id: "9",
+                    name: "Child - 9",
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  };
+
+
   return (
     <Box className='totalWrapperStyle' style={totalWrapperStyle}>
       <Box className='leftSide'>
-        <Button onClick={handleOpen}>Filter</Button>
+        {/*<Button onClick={handleOpen}>Filter</Button>*/}
         <Modal
           open={open}
           onClose={handleClose}
@@ -170,35 +217,15 @@ export default function GraphPage(props: Props) {
               display: 'flex',
               justifyContent: 'space-between',
             }}>
-              <Tabs
-                value={value}
-                onChange={handleChange}
-                aria-label='basic tabs example'
-                style={{
-                  display: 'flex',
-                  margin: 'auto',
-                }}
-              >
-                <Tab label='Package View' {...a11yProps(0)} />
-                <Tab label='Project View' {...a11yProps(1)} />
-              </Tabs>
             </Box>
-            <TabPanel value={value} index={0}>
-              <CustomizedTreeView
-                style={treeWrapperStyle}
-                data={data.tree}
-                onClick={onClick}
-                onCheck={onCheck}
-              />
-            </TabPanel>
-            <TabPanel value={value} index={1}>
-              <CustomizedTreeView
-                style={treeWrapperStyle}
-                data={data.tree}
-                onClick={onClick}
-                onCheck={onCheck}
-              />
-            </TabPanel>
+            <CustomizedTreeView
+              style={treeWrapperStyle}
+              data={data.tree}
+              onClick={onClick}
+              onCheck={onCheck}
+              handleClose={handleClose}
+              setSelectedNodes={setFilteredData}
+            />
 
           </Box>
         </Modal>
@@ -210,7 +237,7 @@ export default function GraphPage(props: Props) {
       </Box>
       {filteredData ?
         <Box className='rightSide'>
-          <Box id='diagramContainer' style={{ height: '85vh', width: '70vw' }}>
+          <Box id='diagramContainer' style={{ height: '90vh', width: '100vw' }}>
             <ReactFlowProvider>
               <Graph
                 onClick={onClick}

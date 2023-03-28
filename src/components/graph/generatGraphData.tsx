@@ -25,27 +25,89 @@ export default function generateNodes(callTree: CallTree): { nodes: Node[], edge
 
     let prevFunction = "";
     let files = callTree.tree;
-    function findClassInterfaces(jsonObj: Files): ClassInterface[] {
-        const classInterfaces: ClassInterface[] = [];
+    function findClassDeclarations(callTree: CallTree): ClassInterface[] {
+        const classes: ClassInterface[] = [];
 
-        for (const key in jsonObj) {
-            if (typeof jsonObj[key] === "object") {
-                const nestedObj = jsonObj[key] as Files | ClassInterface;
-                if ("name" in nestedObj) {
-                    const classInterface = nestedObj as ClassInterface;
-                    classInterfaces.push(classInterface);
-                } else {
-                    const nestedClassInterfaces = findClassInterfaces(nestedObj);
-                    classInterfaces.push(...nestedClassInterfaces);
+        function findClassesInFiles(files: Files) {
+            for (const child of Object.values(files.children)) {
+                if (child.type === 'class') {
+                    classes.push(child);
+                } else if (child.type === 'package') {
+                    findClassesInFiles(child);
                 }
             }
         }
 
-        return classInterfaces;
+        findClassesInFiles(callTree.tree);
+
+        return classes;
     }
 
     console.log("Files: " + files);
-    const classInterfaces = findClassInterfaces(files);
+    const classInterfaces = findClassDeclarations(callTree);
+    console.log("Class interfaces: " + classInterfaces);
+    for (const classInterface of classInterfaces) {
+        const classItem = classInterface;
+        const functions = classItem.functions;
+        const nrOfFunctionsInClass = Object.keys(functions).length;
+        const functionColumns = Math.round(nrOfFunctionsInClass);
+        const functionRows = Math.round(nrOfFunctionsInClass);
+
+        nodes.push({
+            id: classItem.id,
+            position: {
+                x: 0,
+                y: 0
+            },
+            data: {
+                label: classItem.id,
+                type: "class"
+            },
+            style: {
+                backgroundColor: classColor,
+                border: '0.5px solid #e0e0e0',
+                ...boxStyle
+            },
+            type: 'groupNode',
+            zIndex: 0,
+        })
+
+        let functionX = margin;
+        let functionY = margin;
+        let k = 0;
+        for (const key in functions) {
+            const functionItem = functions[key];
+            const functionId = functionItem.id;
+            nodes.push({
+                id: functionId,
+                data: {
+                    label: key,
+                    type: "function"
+                },
+                position: {
+                    x: functionX,
+                    y: functionY
+                },
+                parentNode: classItem.id,
+                connectable: false,
+                extent: "parent",
+                style: {
+                    backgroundColor: functionColor,
+                    ...boxStyle,
+                },
+                type: 'resizableNode',
+                zIndex: 2,
+            })
+            k++;
+            n++;
+            if (k % functionColumns === 0) {
+                functionX = margin;
+                functionX += 200 + margin;
+            } else {
+                functionY += 50 + margin;
+            }
+        }
+    }
 
     /*for (const key in files) {
         const file = files[key];
@@ -135,6 +197,7 @@ export default function generateNodes(callTree: CallTree): { nodes: Node[], edge
         x += fileWidth + margin;
 
     }*/
+    console.log("Nodes: " + nodes);
     const functions = callTree.functions;
     enum edgeType {
         floating = "floating",
