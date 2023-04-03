@@ -8,10 +8,7 @@ interface UploadButtonProps {
 export default function UploadButton(props: UploadButtonProps) {
   const { onFileChange } = props;
   return (
-    <Button variant="contained" component="label" style={{
-      backgroundColor: "#000",
-      marginLeft: "10rem",
-    }}>
+    <Button variant="outlined" component="label">
       UPLOAD
       <input accept=".zip" hidden type="file" onChange={onFileChange} />
     </Button>

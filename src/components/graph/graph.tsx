@@ -1,62 +1,140 @@
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import ReactFlow, {
+  addEdge,
   applyEdgeChanges,
   applyNodeChanges,
   Background,
+  ConnectionMode,
   Controls,
   Edge,
   EdgeChange,
+  MarkerType,
   MiniMap,
   Node,
   NodeChange,
-  ReactFlowProvider,
-  useReactFlow
+  ReactFlowProvider, useEdgesState, useNodesState,
 } from 'reactflow';
 import 'reactflow/dist/style.css';
-import generatGraphData from './generatGraphData.js';
-import FloatingEdge from './floatingEdge.js';
-import FloatingConnectionLine from './floatingConnecctionLine.js';
+import {generateEdges, generateNodes} from './generatGraphData.js';
 import resizableNode from './resizableNode';
 import './floating.css';
-import { Box, Button } from '@mui/material';
+import { Box } from '@mui/material';
 import { CallTree } from '../../interfaces/interface';
 import GroupNode from './groupNode';
+import SimpleFloatingEdge from './simpleFloatingEdge';
+import CustomNode from './CustomNode.jsx';
 
 const edgeTypes = {
-  floating: FloatingEdge
+  floating: SimpleFloatingEdge,
 };
 
 const nodeTypes = {
   resizableNode: resizableNode,
-  groupNode: GroupNode
+  groupNode: GroupNode,
+  custom: CustomNode
 };
-
-const flowKey = 'example-flow';
 
 interface GraphProps {
   onClick: any;
   data: CallTree;
+  filteredData: string[];
+  showUnConnectedNodes: boolean;
 }
 
+const functionColor = 'rgba(50, 50, 50, 1)';
+const textColor = "white";
+
+const boxStyle = {
+  borderRadius: 12,
+  color: textColor,
+  boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.3)',
+}
+
+
 export default function Graph(props: GraphProps) {
-  const { onClick, data } = props;
-  const graphData = generatGraphData(data);
-  const [rfInstance, setRfInstance] = useState(null);
-  const { setViewport } = useReactFlow();
-  const reactFlowInstance = useReactFlow();
+  const { onClick, data, filteredData, showUnConnectedNodes } = props;
+
+  const [nodes, setNodes] = useNodesState<Node[]>(generateNodes(data, filteredData, showUnConnectedNodes));
+  const [edges, setEdges] = useEdgesState<Edge[]>(generateEdges(data));
+
+  useEffect(() => {
+    setNodes(generateNodes(data, filteredData, showUnConnectedNodes));
+    setEdges(generateEdges(data));
+  }, [data, filteredData, showUnConnectedNodes]);
 
 
-  const onNodeClick = (node: Node) => {
-    onClick(node);
+  const onNodeClick = (clickedNode: Node) => {
+    if(clickedNode.id.includes('/')){
+      return;
+    }
+    onClick(clickedNode);
+    setNodes((nds) =>
+      nds.map((node) => {
+        if (node.id === clickedNode.id) {
+          // when you update a simple type you can just update the value
+          node.style = {
+            border: '3px solid green',
+            backgroundColor: 'rgba(50, 50, 50, 1)',
+            ...boxStyle
+          };
+        }
+        else if (!node.id.includes('/')) {
+          node.style = {
+            border: "none",
+            backgroundColor: 'rgba(50, 50, 50, 1)',
+            ...boxStyle
+          };
+        }
+        return node;
+      })
+    );
+    setEdges((eds) =>
+      eds.map((edge) => {
+        const edgeId = edge.id.split('-');
+        if (edgeId[0] === clickedNode.id) {
+          // when you update a simple type you can just update the value
+          edge.style = {
+            stroke: 'green',
+            strokeWidth: 3
+          };
+          edge.animated = true;
+          edge.markerEnd ={
+            type: MarkerType.ArrowClosed,
+              color: 'green',
+          }
+        }
+        else if (edgeId[1] === clickedNode.id) {
+          // when you update a simple type you can just update the value
+          edge.style = {
+            stroke: 'red',
+            strokeWidth: 3
+          };
+          edge.animated = true;
+          edge.markerEnd ={
+            type: MarkerType.ArrowClosed,
+            color: 'red',
+          }
+        }
+        else {
+          edge.style = {
+            stroke: '#b1b1b7',
+            strokeWidth: 3
+          };
+          edge.animated = false;
+          edge.markerEnd ={
+            type: MarkerType.ArrowClosed,
+            color: '#b1b1b7',
+          }
+        }
+
+        return edge;
+      })
+    );
   };
-
-  const [nodes, setNodes] = useState<Node[]>(graphData.nodes);
-  const [edges, setEdges] = useState<Edge[]>(graphData.edges);
 
   const onNodesChange = useCallback(
     (changes: NodeChange[]) => {
       setNodes((nds) => applyNodeChanges(changes, nds));
-      console.log(changes[0]);
     },
     [setNodes]
   );
@@ -64,34 +142,20 @@ export default function Graph(props: GraphProps) {
     (changes: EdgeChange[]) => {
       setEdges((eds) =>
         applyEdgeChanges(changes, eds));
-      console.log(changes[0]);
     },
 
     [setEdges]
   );
 
-  const onSave = useCallback(() => {
-    if (rfInstance) {
-      // @ts-ignore
-      const flow = rfInstance.toObject();
-      localStorage.setItem(flowKey, JSON.stringify(flow));
-    }
-  }, [rfInstance]);
+  const onConnect = useCallback(
+    (params:any) =>
+      setEdges((eds) =>
+        addEdge({ ...params, type: 'floating', markerEnd: { type: MarkerType.Arrow } }, eds)
+      ),
+    []
+  );
 
-  const onRestore = useCallback(() => {
-    const restoreFlow = async () => {
-      const flow = JSON.parse(localStorage.getItem(flowKey) ?? '');
-
-      if (flow) {
-        const { x = 0, y = 0, zoom = 1 } = flow.viewport;
-        setNodes(flow.nodes || []);
-        setEdges(flow.edges || []);
-        setViewport({ x, y, zoom });
-      }
-    };
-
-    restoreFlow();
-  }, [setNodes, setViewport]);
+  // @ts-ignore
   return (
     <ReactFlowProvider>
       <ReactFlow
@@ -99,16 +163,18 @@ export default function Graph(props: GraphProps) {
         edges={edges}
         onNodesChange={onNodesChange}
         onEdgesChange={onEdgesChange}
+        onConnect={onConnect}
         elementsSelectable={true}
         fitView
         nodeTypes={nodeTypes}
+        // @ts-ignore
         edgeTypes={edgeTypes}
-        minZoom={0.01}
-        connectionLineComponent={FloatingConnectionLine}
+        minZoom={0.1}
         onNodeClick={(event, node) => onNodeClick(node)}
         proOptions={{
           hideAttribution: true,
         }}
+        connectionMode={ConnectionMode.Loose}
       >
         <Box className='save__controls' sx={{
           position: 'absolute',
@@ -117,12 +183,6 @@ export default function Graph(props: GraphProps) {
           zIndex: 4,
           fontSize: '12px'
         }}>
-          <Button key='save' onClick={onSave}>
-            Save
-          </Button>
-          <Button key='restore' onClick={onRestore}>
-            Restore
-          </Button>
         </Box>
         <Controls />
         <Background />

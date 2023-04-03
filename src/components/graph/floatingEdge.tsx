@@ -2,7 +2,7 @@ import { useCallback } from 'react';
 import { useStore, getBezierPath } from 'reactflow';
 import './floating.css'
 
-import { getEdgeParams } from '../../utils/nodeUtils.js';
+import { getEdgeParams } from '../../utils/utils.js';
 
 function FloatingEdge({ id, source, target, markerEnd, style }: any) {
   const sourceNode = useStore(useCallback((store) => store.nodeInternals.get(source), [source]));
@@ -15,7 +15,6 @@ function FloatingEdge({ id, source, target, markerEnd, style }: any) {
   function handleEdgeClick(event:any) {
     const element = event.target;
     element.style.stroke = "green";
-    console.log("edge clicked");
   }
 
   const { sx, sy, tx, ty, sourcePos, targetPos } = getEdgeParams(sourceNode, targetNode);

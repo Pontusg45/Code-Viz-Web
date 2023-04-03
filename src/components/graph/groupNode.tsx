@@ -24,7 +24,6 @@ function GroupNode({ id, data }: NodeProps) {
       <Typography variant="h6" style={{ padding: 10, backgroundColor: "black" }}>
         {data.label.split('/')[data.label.split('/').length -1]}
       </Typography>
-      <NodeResizer lineStyle={lineStyle} minWidth={minWidth} minHeight={minHeight} />
     </div>
   );
 }

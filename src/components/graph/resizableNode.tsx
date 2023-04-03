@@ -22,23 +22,12 @@ const ResizableNodeSelected = (props: Props) => {
   };
 
   return (
-    <div style={isClicked ? clicked : notClicked} onClick={handleClick}>
-      {data.type != "function"?
-      <NodeResizer color='white' isVisible={props.selected} minWidth={100} minHeight={30} />
-        : null
-      }
-      <Handle type='target' position={Position.Left} style={{ display: 'none' }} />
-      <div
-        // make overflow of text epllises
-        style={{
-          overflow: 'hidden',
-          whiteSpace: "nowrap",
-          textOverflow: "ellipsis"
-        }}
-      >
-        {props.data.label}
+    <div style={notClicked} onClick={handleClick}>
+      <Handle type='source' position={Position.Left} id="a"/>
+      <div>
+        {data.label}
       </div>
-      <Handle type='source' position={Position.Right} style={{ display: 'none' }} />
+      <Handle type='source' position={Position.Right} id="b"/>
     </div>
   );
 };

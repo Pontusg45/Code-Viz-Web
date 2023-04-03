@@ -23,6 +23,18 @@ export default function RecursiveTreeView(
   const [selected, setSelected] = React.useState<string[]>([]);
 
   function getOnChange(checked: boolean, functionName: string, type: 'file' | 'class' | 'function') {
+    return (event: React.ChangeEvent<HTMLInputElement>) => {
+      if (checked) {
+        setSelectedNodes((prev: string[]) => {
+          return prev.filter((value) => value !== functionName);
+        });
+      } else {
+        setSelectedNodes((prev: string[]) => {
+          return [...prev, functionName];
+        });
+      }
+      onCheck(event, checked, functionName, type);
+    };
 
   }
 
@@ -38,7 +50,6 @@ export default function RecursiveTreeView(
       {
         Array.isArray(Object.keys(file.children))
           ? Object.keys(file.children).map((pathElement) => {
-            console.log(pathElement);
             if (file.children[pathElement].type !== 'package') {
               return renderClass(file.children[pathElement] as ClassInterface, pathElement);
             } else {
@@ -63,7 +74,6 @@ export default function RecursiveTreeView(
       {
         Array.isArray(Object.keys(classe.functions))
           ? Object.keys(classe.functions).map((funName) =>{
-            console.log(classe.functions);
             return renderFunction(classe.functions[funName])
           })
           : null
@@ -83,12 +93,6 @@ export default function RecursiveTreeView(
     </TreeItem>
   );
 
-  type CustomTreeItemProps = {
-    key: string,
-    label: string,
-    type: 'file' | 'class' | 'function'
-  }
-
   function customTreeItemProps(props: any) {
     const { key, label, type } = props;
     if (i == 1 && type !== 'function'){
@@ -105,7 +109,9 @@ export default function RecursiveTreeView(
             <Checkbox
               checkedIcon={<VisibilityOff />}
               icon={<Visibility onClick={onCheck} />}
-              checked={selected.some((item) => item === key)}
+              checked={
+                selected.some((item) => item === key)
+              }
               onChange={(event) =>
                 getOnChange(event.currentTarget.checked, event.target.value, type)
               }
@@ -121,16 +127,28 @@ export default function RecursiveTreeView(
 
   const [expanded, setExpanded] = React.useState<string[]>([]);
 
-  const handleToggle = (event: any, nodeIds: any) => {
+  const handleToggle = (event:any, nodeIds:any) => {
+    if (event.target.nodeName !== "svg") {
+      return;
+    }
     setExpanded(nodeIds);
   };
 
-  const handleSelect = (event: any, nodeIds: any) => {
-    setSelected(nodeIds);
+  const handleSelect = (event:any, nodeIds:any) => {
+    if (event.target.nodeName === "svg") {
+      return;
+    }
+    const first = nodeIds[0];
+    if (selected.includes(first)) {
+      setSelected(selected.filter(id => id !== first));
+      setSelectedNodes(selected.filter(id => id !== first));
+    } else {
+      setSelected([first, ...selected]);
+      setSelectedNodes([first, ...selected]);
+    }
   };
 
   const handleExpandClick = () => {
-    console.log("keys", keys);
     setExpanded((oldExpanded: string[]) =>
       oldExpanded.length === 0 ? keys : []
     );
@@ -140,6 +158,7 @@ export default function RecursiveTreeView(
     setSelected((oldSelected) =>
       oldSelected.length === 0 ? keys : []
     );
+
   };
 
   return (
@@ -171,7 +190,7 @@ export default function RecursiveTreeView(
         {
           Array.isArray(Object.keys(data))
             ? Object.keys(data).map((fileName) =>
-              renderFiles(data as Files, fileName)
+              renderFiles(data , "Program")
             )
             : null
         }

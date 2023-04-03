@@ -5,8 +5,9 @@ import { Box, createTheme, CssBaseline, responsiveFontSizes, ThemeProvider } fro
 import { ReactFlowProvider } from 'reactflow';
 import UploadButton from './components/uploadButton';
 import GraphPage from './components/graph/GraphPage';
-import fakeData from './components/graph/mockData.json';
+//import fakeData from './components/graph/mockData.json';
 import { FileUploader } from 'react-drag-drop-files';
+
 
 const fileTypes = ['ZIP'];
 
@@ -21,6 +22,7 @@ enum PaletteMode {
 }
 
 function App() {
+  //const [data, setData] = useState(fakeData);
   const [data, setData] = useState(null);
   const graphWrapperStyle = {
     display: 'flex',
@@ -117,12 +119,22 @@ function App() {
       );
   }
 
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const openFilter = (event: any) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
   async function parseFile(file: any) {
     const formData = new FormData();
     if (!file) return;
     formData.append('file', file);
     const response = await fetch('https://api.vinobot.xyz/parse', {
+    //const response = await fetch('http://localhost:8080/parse', {
       method: 'POST',
       body: formData
     });
@@ -144,12 +156,17 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Box>
-          <Header onFileChange={onFileChange} />
+          <Header onFileChange={onFileChange} openFilter={openFilter} />
           <ReactFlowProvider>
             <Box style={graphWrapperStyle}>
               {
                 data ?
-                  <GraphPage data={data} /> :
+                  <GraphPage
+                    data={data}
+                    setAnchorEl={setAnchorEl}
+                    anchorEl={anchorEl}
+                    handleClose={handleClose}
+                  /> :
                   <FileUploader
                     handleChange={handleChange}
                     name='file'

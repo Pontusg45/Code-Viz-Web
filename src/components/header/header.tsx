@@ -1,24 +1,25 @@
 import React from 'react';
 import './header.scss';
-import { Box, Button } from '@mui/material';
+import { Box, Button, Typography } from '@mui/material';
 import UploadButton from '../uploadButton';
 import { TreeSelect } from 'mui-tree-select';
 import Sample from '../filter/treeView/SelectTree';
 
 type HeaderProps = {
     onFileChange: any;
-}
+    openFilter: any;
+};
 
-function Header(props: HeaderProps) {
-    const { onFileChange } = props;
+export default function Header(props: HeaderProps) {
+    const { onFileChange, openFilter } = props;
 
     return (
         <Box className="header">
-        <Sample/>
-        <h1>Code Viz</h1>
-            <UploadButton onFileChange={onFileChange}/>
+            <Button aria-describedby={'simple-popover'} variant="outlined" onClick={openFilter}>
+                Filter
+            </Button>
+            <Typography variant='h2'>Code Viz</Typography>
+            <UploadButton onFileChange={onFileChange} />
         </Box>
-    )
+    );
 }
-
-export default Header;

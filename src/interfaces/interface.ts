@@ -11,25 +11,23 @@ export interface CallTree {
 
 
 export interface Files {
-  id: string;
+  id?: string;
   children: {
     [filename: string]: Files | ClassInterface;
   }
-  type: 'package';
+  type?: string;
 }
 
 export interface ClassInterface {
   functions: {
     [functionName: string]: LightFunctionInterface
   }
-  fileName: string;
-  name: string;
   x?: number;
   y?: number;
   width?: number;
   height?: number;
   id: string;
-  type: 'class';
+  type: string;
 }
 
 export interface FileInterface {

@@ -1,0 +1,2716 @@
+{
+    "tree": {
+        "children": {
+            "Advance-Object-Oriented-Programming-master": {
+                "type": "package",
+                "id": "/Advance-Object-Oriented-Programming-master",
+                "children": {
+                    "Calculator.java": {
+                        "type": "class",
+                        "id": "/Advance-Object-Oriented-Programming-master/Calculator.java",
+                        "functions": {
+                            "solve": {
+                                "id": "Calculator#solve"
+                            },
+                            "checkPrecedence": {
+                                "id": "Calculator#checkPrecedence"
+                            },
+                            "main": {
+                                "id": "Calculator#main"
+                            },
+                            "calculate": {
+                                "id": "Calculator#calculate"
+                            }
+                        }
+                    },
+                    "Client.java": {
+                        "type": "class",
+                        "id": "/Advance-Object-Oriented-Programming-master/Client.java",
+                        "functions": {
+                            "asciiCalc": {
+                                "id": "Client#asciiCalc"
+                            },
+                            "hashCode": {
+                                "id": "Client#hashCode"
+                            },
+                            "makeConnectionToServer": {
+                                "id": "Client#makeConnectionToServer"
+                            },
+                            "main": {
+                                "id": "Client#main"
+                            },
+                            "serverSelection": {
+                                "id": "Client#serverSelection"
+                            }
+                        }
+                    },
+                    "Client4.java": {
+                        "type": "class",
+                        "id": "/Advance-Object-Oriented-Programming-master/Client4.java",
+                        "functions": {
+                            "main": {
+                                "id": "Client4#main"
+                            }
+                        }
+                    },
+                    "Driver.java": {
+                        "type": "class",
+                        "id": "/Advance-Object-Oriented-Programming-master/Driver.java",
+                        "functions": {
+                            "init": {
+                                "id": "Driver#init"
+                            },
+                            "initTest": {
+                                "id": "Driver#initTest"
+                            },
+                            "test": {
+                                "id": "Driver#test"
+                            },
+                            "sizeTest": {
+                                "id": "Driver#sizeTest"
+                            },
+                            "generateMeanObject": {
+                                "id": "Driver#generateMeanObject"
+                            },
+                            "testIt": {
+                                "id": "Driver#testIt"
+                            },
+                            "main": {
+                                "id": "Driver#main"
+                            },
+                            "removeTest": {
+                                "id": "Driver#removeTest"
+                            },
+                            "iteratorTest": {
+                                "id": "Driver#iteratorTest"
+                            },
+                            "containsTest": {
+                                "id": "Driver#containsTest"
+                            },
+                            "isEmptyTest": {
+                                "id": "Driver#isEmptyTest"
+                            },
+                            "generateString": {
+                                "id": "Driver#generateString"
+                            },
+                            "objectGenerator": {
+                                "id": "Driver#objectGenerator"
+                            },
+                            "generateObject": {
+                                "id": "Driver#generateObject"
+                            },
+                            "end": {
+                                "id": "Driver#end"
+                            },
+                            "addTest": {
+                                "id": "Driver#addTest"
+                            },
+                            "testOneKind": {
+                                "id": "Driver#testOneKind"
+                            }
+                        }
+                    },
+                    "HashSetNew.java": {
+                        "type": "class",
+                        "id": "/Advance-Object-Oriented-Programming-master/HashSetNew.java",
+                        "functions": {
+                            "add": {
+                                "id": "HashSetNew#add"
+                            },
+                            "contains": {
+                                "id": "HashSetNew#contains"
+                            },
+                            "iterator": {
+                                "id": "HashSetNew#iterator"
+                            },
+                            "size": {
+                                "id": "HashSetNew#size"
+                            },
+                            "isEmpty": {
+                                "id": "HashSetNew#isEmpty"
+                            },
+                            "clear": {
+                                "id": "HashSetNew#clear"
+                            },
+                            "remove": {
+                                "id": "HashSetNew#remove"
+                            }
+                        }
+                    },
+                    "MVCCalculatorDemo.java": {
+                        "type": "class",
+                        "id": "/Advance-Object-Oriented-Programming-master/MVCCalculatorDemo.java",
+                        "functions": {
+                            "main": {
+                                "id": "MVCCalculatorDemo#main"
+                            }
+                        }
+                    },
+                    "MeanObject.java": {
+                        "type": "class",
+                        "id": "/Advance-Object-Oriented-Programming-master/MeanObject.java",
+                        "functions": {
+                            "hashCode": {
+                                "id": "MeanObject#hashCode"
+                            },
+                            "equals": {
+                                "id": "MeanObject#equals"
+                            },
+                            "toString": {
+                                "id": "MeanObject#toString"
+                            }
+                        }
+                    },
+                    "RMIClient1.java": {
+                        "type": "class",
+                        "id": "/Advance-Object-Oriented-Programming-master/RMIClient1.java",
+                        "functions": {
+                            "main": {
+                                "id": "RMIClient1#main"
+                            },
+                            "clientmethod": {
+                                "id": "RMIClient1#clientmethod"
+                            }
+                        }
+                    },
+                    "RMIClient42.java": {
+                        "type": "class",
+                        "id": "/Advance-Object-Oriented-Programming-master/RMIClient42.java",
+                        "functions": {
+                            "main": {
+                                "id": "RMIClient42#main"
+                            },
+                            "clientmethod": {
+                                "id": "RMIClient42#clientmethod"
+                            }
+                        }
+                    },
+                    "RMIClient43.java": {
+                        "type": "class",
+                        "id": "/Advance-Object-Oriented-Programming-master/RMIClient43.java",
+                        "functions": {
+                            "main": {
+                                "id": "RMIClient43#main"
+                            },
+                            "clientmethod": {
+                                "id": "RMIClient43#clientmethod"
+                            }
+                        }
+                    },
+                    "RMIClient44.java": {
+                        "type": "class",
+                        "id": "/Advance-Object-Oriented-Programming-master/RMIClient44.java",
+                        "functions": {
+                            "main": {
+                                "id": "RMIClient44#main"
+                            },
+                            "clientmethod": {
+                                "id": "RMIClient44#clientmethod"
+                            }
+                        }
+                    },
+                    "RMIServer4.java": {
+                        "type": "class",
+                        "id": "/Advance-Object-Oriented-Programming-master/RMIServer4.java",
+                        "functions": {
+                            "displayguesses": {
+                                "id": "RMIServer4#displayguesses"
+                            },
+                            "displaychances": {
+                                "id": "RMIServer4#displaychances"
+                            },
+                            "matchLetter": {
+                                "id": "RMIServer4#matchLetter"
+                            },
+                            "model1": {
+                                "id": "RMIServer4#model1"
+                            },
+                            "returndone": {
+                                "id": "RMIServer4#returndone"
+                            },
+                            "main": {
+                                "id": "RMIServer4#main"
+                            },
+                            "comparescore": {
+                                "id": "RMIServer4#comparescore"
+                            },
+                            "select_random": {
+                                "id": "RMIServer4#select_random"
+                            },
+                            "checkwithwordselected": {
+                                "id": "RMIServer4#checkwithwordselected"
+                            },
+                            "putscore": {
+                                "id": "RMIServer4#putscore"
+                            },
+                            "displayword": {
+                                "id": "RMIServer4#displayword"
+                            },
+                            "makeDashes": {
+                                "id": "RMIServer4#makeDashes"
+                            },
+                            "wonthegame": {
+                                "id": "RMIServer4#wonthegame"
+                            },
+                            "counterCheck": {
+                                "id": "RMIServer4#counterCheck"
+                            },
+                            "returndashes": {
+                                "id": "RMIServer4#returndashes"
+                            },
+                            "returnscore": {
+                                "id": "RMIServer4#returnscore"
+                            },
+                            "goodbadguesscheck": {
+                                "id": "RMIServer4#goodbadguesscheck"
+                            },
+                            "scoreandword": {
+                                "id": "RMIServer4#scoreandword"
+                            }
+                        }
+                    },
+                    "Server.java": {
+                        "type": "class",
+                        "id": "/Advance-Object-Oriented-Programming-master/Server.java",
+                        "functions": {
+                            "lookup": {
+                                "id": "Server#lookup"
+                            },
+                            "asciiCalc": {
+                                "id": "Server#asciiCalc"
+                            },
+                            "insertFile": {
+                                "id": "Server#insertFile"
+                            },
+                            "hashCode": {
+                                "id": "Server#hashCode"
+                            },
+                            "checkForOccurrence": {
+                                "id": "Server#checkForOccurrence"
+                            },
+                            "makeConnectionToServer": {
+                                "id": "Server#makeConnectionToServer"
+                            },
+                            "main": {
+                                "id": "Server#main"
+                            },
+                            "replicateFile": {
+                                "id": "Server#replicateFile"
+                            },
+                            "insertInMap": {
+                                "id": "Server#insertInMap"
+                            }
+                        }
+                    },
+                    "Server4.java": {
+                        "type": "class",
+                        "id": "/Advance-Object-Oriented-Programming-master/Server4.java",
+                        "functions": {
+                            "model1": {
+                                "id": "Server4#model1"
+                            },
+                            "main": {
+                                "id": "Server4#main"
+                            },
+                            "select_random": {
+                                "id": "Server4#select_random"
+                            }
+                        }
+                    },
+                    "ServerDriver4.java": {
+                        "type": "class",
+                        "id": "/Advance-Object-Oriented-Programming-master/ServerDriver4.java",
+                        "functions": {
+                            "main": {
+                                "id": "ServerDriver4#main"
+                            }
+                        }
+                    },
+                    "ServerInterface4.java": {
+                        "type": "class",
+                        "id": "/Advance-Object-Oriented-Programming-master/ServerInterface4.java",
+                        "functions": {
+                            "displayguesses": {
+                                "id": "ServerInterface4#displayguesses"
+                            },
+                            "displaychances": {
+                                "id": "ServerInterface4#displaychances"
+                            },
+                            "returndone": {
+                                "id": "ServerInterface4#returndone"
+                            },
+                            "comparescore": {
+                                "id": "ServerInterface4#comparescore"
+                            },
+                            "checkwithwordselected": {
+                                "id": "ServerInterface4#checkwithwordselected"
+                            },
+                            "putscore": {
+                                "id": "ServerInterface4#putscore"
+                            },
+                            "displayword": {
+                                "id": "ServerInterface4#displayword"
+                            },
+                            "makeDashes": {
+                                "id": "ServerInterface4#makeDashes"
+                            },
+                            "wonthegame": {
+                                "id": "ServerInterface4#wonthegame"
+                            },
+                            "counterCheck": {
+                                "id": "ServerInterface4#counterCheck"
+                            },
+                            "returndashes": {
+                                "id": "ServerInterface4#returndashes"
+                            },
+                            "returnscore": {
+                                "id": "ServerInterface4#returnscore"
+                            },
+                            "goodbadguesscheck": {
+                                "id": "ServerInterface4#goodbadguesscheck"
+                            },
+                            "scoreandword": {
+                                "id": "ServerInterface4#scoreandword"
+                            }
+                        }
+                    },
+                    "ServerThread1.java": {
+                        "type": "class",
+                        "id": "/Advance-Object-Oriented-Programming-master/ServerThread1.java",
+                        "functions": {
+                            "makeDashes": {
+                                "id": "ServerThread1#makeDashes"
+                            },
+                            "matchLetter": {
+                                "id": "ServerThread1#matchLetter"
+                            },
+                            "run": {
+                                "id": "ServerThread1#run"
+                            }
+                        }
+                    },
+                    "ServerThread4.java": {
+                        "type": "class",
+                        "id": "/Advance-Object-Oriented-Programming-master/ServerThread4.java",
+                        "functions": {
+                            "makeDashes": {
+                                "id": "ServerThread4#makeDashes"
+                            },
+                            "matchLetter": {
+                                "id": "ServerThread4#matchLetter"
+                            },
+                            "run": {
+                                "id": "ServerThread4#run"
+                            }
+                        }
+                    },
+                    "Subsets.java": {
+                        "type": "class",
+                        "id": "/Advance-Object-Oriented-Programming-master/Subsets.java",
+                        "functions": {
+                            "main": {
+                                "id": "Subsets#main"
+                            },
+                            "subset": {
+                                "id": "Subsets#subset"
+                            }
+                        }
+                    },
+                    "UDPClient.java": {
+                        "type": "class",
+                        "id": "/Advance-Object-Oriented-Programming-master/UDPClient.java",
+                        "functions": {
+                            "main": {
+                                "id": "UDPClient#main"
+                            }
+                        }
+                    },
+                    "UDPClient4.java": {
+                        "type": "class",
+                        "id": "/Advance-Object-Oriented-Programming-master/UDPClient4.java",
+                        "functions": {
+                            "main": {
+                                "id": "UDPClient4#main"
+                            }
+                        }
+                    },
+                    "UDPServer.java": {
+                        "type": "class",
+                        "id": "/Advance-Object-Oriented-Programming-master/UDPServer.java",
+                        "functions": {
+                            "model1": {
+                                "id": "UDPServer#model1"
+                            },
+                            "main": {
+                                "id": "UDPServer#main"
+                            },
+                            "select_random": {
+                                "id": "UDPServer#select_random"
+                            }
+                        }
+                    },
+                    "UDPServer4.java": {
+                        "type": "class",
+                        "id": "/Advance-Object-Oriented-Programming-master/UDPServer4.java",
+                        "functions": {
+                            "model1": {
+                                "id": "UDPServer4#model1"
+                            },
+                            "main": {
+                                "id": "UDPServer4#main"
+                            },
+                            "select_random": {
+                                "id": "UDPServer4#select_random"
+                            }
+                        }
+                    },
+                    "UDPServerThread.java": {
+                        "type": "class",
+                        "id": "/Advance-Object-Oriented-Programming-master/UDPServerThread.java",
+                        "functions": {
+                            "makeDashes": {
+                                "id": "UDPServerThread#makeDashes"
+                            },
+                            "matchLetter": {
+                                "id": "UDPServerThread#matchLetter"
+                            },
+                            "run": {
+                                "id": "UDPServerThread#run"
+                            }
+                        }
+                    },
+                    "UDPServerThread4.java": {
+                        "type": "class",
+                        "id": "/Advance-Object-Oriented-Programming-master/UDPServerThread4.java",
+                        "functions": {
+                            "makeDashes": {
+                                "id": "UDPServerThread4#makeDashes"
+                            },
+                            "matchLetter": {
+                                "id": "UDPServerThread4#matchLetter"
+                            },
+                            "run": {
+                                "id": "UDPServerThread4#run"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "functions": {
+        "Server#lookup": {
+            "parameters": {
+                "fileName": "String",
+                "directory": "File"
+            },
+            "name": "Server#lookup",
+            "recursive": "false",
+            "inComing": 6,
+            "outGoing": 0,
+            "numberOfCalls": 6,
+            "parents": [
+                "null#null",
+                "Server#main",
+                "Server#lookup"
+            ],
+            "children": [
+                "Server#lookup"
+            ]
+        },
+        "RMIClient42#main": {
+            "parameters": {
+                "args": "String[]"
+            },
+            "name": "RMIClient42#main",
+            "recursive": "false",
+            "inComing": 0,
+            "outGoing": 0,
+            "numberOfCalls": 0,
+            "parents": [],
+            "children": [
+                "RMIClient42#clientmethod",
+                "ServerInterface4#counterCheck",
+                "RMIClient44#clientmethod",
+                "RMIClient43#clientmethod",
+                "HashSetNew#contains",
+                "RMIServer4#counterCheck",
+                "RMIClient1#clientmethod"
+            ]
+        },
+        "Driver#end": {
+            "parameters": {},
+            "name": "Driver#end",
+            "recursive": "false",
+            "inComing": 1,
+            "outGoing": 0,
+            "numberOfCalls": 1,
+            "parents": [
+                "Driver#test"
+            ],
+            "children": []
+        },
+        "Server#asciiCalc": {
+            "parameters": {
+                "s": "String"
+            },
+            "name": "Server#asciiCalc",
+            "recursive": "false",
+            "inComing": 2,
+            "outGoing": 0,
+            "numberOfCalls": 2,
+            "parents": [
+                "Client#hashCode",
+                "Server#hashCode"
+            ],
+            "children": []
+        },
+        "MVCCalculatorDemo#main": {
+            "parameters": {
+                "args": "String[]"
+            },
+            "name": "MVCCalculatorDemo#main",
+            "recursive": "false",
+            "inComing": 0,
+            "outGoing": 0,
+            "numberOfCalls": 0,
+            "parents": [],
+            "children": [
+                "CalculatorView#display",
+                "CalculatorController#callModel",
+                "CalculatorView#displayanswer"
+            ]
+        },
+        "Subsets#main": {
+            "parameters": {
+                "args": "String[]"
+            },
+            "name": "Subsets#main",
+            "recursive": "false",
+            "inComing": 0,
+            "outGoing": 0,
+            "numberOfCalls": 0,
+            "parents": [],
+            "children": [
+                "Subsets#subset"
+            ]
+        },
+        "CalculatorModel#checkPrecedence": {
+            "parameters": {
+                "opr1": "char",
+                "opr2": "char"
+            },
+            "name": "CalculatorModel#checkPrecedence",
+            "recursive": "false",
+            "inComing": 2,
+            "outGoing": 0,
+            "numberOfCalls": 2,
+            "parents": [
+                "Calculator#solve",
+                "CalculatorModel#solve"
+            ],
+            "children": []
+        },
+        "RMIClient42#clientmethod": {
+            "parameters": {},
+            "name": "RMIClient42#clientmethod",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "RMIClient1#main",
+                "RMIClient42#main",
+                "RMIClient43#main",
+                "RMIClient44#main"
+            ],
+            "children": [
+                "UDPServerThread4#makeDashes",
+                "RMIServer4#putscore",
+                "ServerThread4#makeDashes",
+                "RMIServer4#checkwithwordselected",
+                "ServerInterface4#wonthegame",
+                "RMIServer4#goodbadguesscheck",
+                "RMIServer4#makeDashes",
+                "ServerInterface4#checkwithwordselected",
+                "RMIServer4#returndashes",
+                "MyIterator#next",
+                "ServerInterface4#comparescore",
+                "RMIServer4#returnscore",
+                "ServerInterface4#scoreandword",
+                "RMIServer4#displayguesses",
+                "RMIServer4#returndone",
+                "ServerInterface4#returnscore",
+                "ServerInterface4#makeDashes",
+                "ServerInterface4#putscore",
+                "ServerInterface4#displayguesses",
+                "ServerInterface4#returndashes",
+                "ServerInterface4#returndone",
+                "ServerInterface4#displaychances",
+                "ServerThread1#makeDashes",
+                "HashSetNew#contains",
+                "RMIServer4#comparescore",
+                "ServerInterface4#goodbadguesscheck",
+                "RMIServer4#displaychances",
+                "RMIServer4#wonthegame",
+                "UDPServerThread#makeDashes",
+                "RMIServer4#scoreandword"
+            ]
+        },
+        "RMIClient43#main": {
+            "parameters": {
+                "args": "String[]"
+            },
+            "name": "RMIClient43#main",
+            "recursive": "false",
+            "inComing": 0,
+            "outGoing": 0,
+            "numberOfCalls": 0,
+            "parents": [],
+            "children": [
+                "RMIClient42#clientmethod",
+                "ServerInterface4#counterCheck",
+                "RMIClient44#clientmethod",
+                "RMIClient43#clientmethod",
+                "HashSetNew#contains",
+                "RMIServer4#counterCheck",
+                "RMIClient1#clientmethod"
+            ]
+        },
+        "Driver#containsTest": {
+            "parameters": {},
+            "name": "Driver#containsTest",
+            "recursive": "false",
+            "inComing": 1,
+            "outGoing": 0,
+            "numberOfCalls": 1,
+            "parents": [
+                "Driver#testOneKind"
+            ],
+            "children": [
+                "MyIterator#remove",
+                "Driver#initTest",
+                "HashSetNew#remove",
+                "HashSetNew#contains"
+            ]
+        },
+        "UDPServer#model1": {
+            "parameters": {},
+            "name": "UDPServer#model1",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "RMIServer4#select_random",
+                "Server4#select_random",
+                "UDPServer#select_random",
+                "UDPServer4#select_random"
+            ],
+            "children": []
+        },
+        "CalculatorModel#solve": {
+            "parameters": {
+                "input": "String"
+            },
+            "name": "CalculatorModel#solve",
+            "recursive": "false",
+            "inComing": 2,
+            "outGoing": 0,
+            "numberOfCalls": 2,
+            "parents": [
+                "Calculator#main",
+                "CalculatorController#callModel"
+            ],
+            "children": [
+                "CalculatorModel#checkPrecedence",
+                "Calculator#calculate",
+                "MeanObject#toString",
+                "Calculator#checkPrecedence",
+                "CalculatorModel#calculate"
+            ]
+        },
+        "Calculator#main": {
+            "parameters": {
+                "args": "String[]"
+            },
+            "name": "Calculator#main",
+            "recursive": "false",
+            "inComing": 0,
+            "outGoing": 0,
+            "numberOfCalls": 0,
+            "parents": [],
+            "children": [
+                "CalculatorModel#solve",
+                "Calculator#solve"
+            ]
+        },
+        "MyIterator#hasNext": {
+            "parameters": {},
+            "name": "MyIterator#hasNext",
+            "recursive": "false",
+            "inComing": 1,
+            "outGoing": 0,
+            "numberOfCalls": 1,
+            "parents": [
+                "Driver#iteratorTest"
+            ],
+            "children": []
+        },
+        "UDPServerThread4#makeDashes": {
+            "parameters": {
+                "s": "String"
+            },
+            "name": "UDPServerThread4#makeDashes",
+            "recursive": "false",
+            "inComing": 8,
+            "outGoing": 0,
+            "numberOfCalls": 8,
+            "parents": [
+                "RMIClient1#clientmethod",
+                "RMIClient42#clientmethod",
+                "RMIClient43#clientmethod",
+                "RMIClient44#clientmethod",
+                "ServerThread1#run",
+                "ServerThread4#run",
+                "UDPServerThread#run",
+                "UDPServerThread4#run"
+            ],
+            "children": []
+        },
+        "Server#replicateFile": {
+            "parameters": {
+                "level": "int",
+                "file_name": "String",
+                "directory": "String"
+            },
+            "name": "Server#replicateFile",
+            "recursive": "false",
+            "inComing": 2,
+            "outGoing": 0,
+            "numberOfCalls": 2,
+            "parents": [
+                "Server#checkForOccurrence"
+            ],
+            "children": [
+                "Client#hashCode",
+                "MeanObject#hashCode",
+                "Server#insertFile",
+                "Server#hashCode"
+            ]
+        },
+        "Server#checkForOccurrence": {
+            "parameters": {
+                "file_name": "String",
+                "directory": "String"
+            },
+            "name": "Server#checkForOccurrence",
+            "recursive": "false",
+            "inComing": 1,
+            "outGoing": 0,
+            "numberOfCalls": 1,
+            "parents": [
+                "Server#main"
+            ],
+            "children": [
+                "Server#replicateFile"
+            ]
+        },
+        "RMIServer4#putscore": {
+            "parameters": {
+                "score": "int",
+                "index": "int"
+            },
+            "name": "RMIServer4#putscore",
+            "recursive": "false",
+            "inComing": 8,
+            "outGoing": 0,
+            "numberOfCalls": 8,
+            "parents": [
+                "RMIClient1#clientmethod",
+                "RMIClient42#clientmethod",
+                "RMIClient43#clientmethod",
+                "RMIClient44#clientmethod"
+            ],
+            "children": []
+        },
+        "Client#asciiCalc": {
+            "parameters": {
+                "s": "String"
+            },
+            "name": "Client#asciiCalc",
+            "recursive": "false",
+            "inComing": 2,
+            "outGoing": 0,
+            "numberOfCalls": 2,
+            "parents": [
+                "Client#hashCode",
+                "Server#hashCode"
+            ],
+            "children": []
+        },
+        "Client#hashCode": {
+            "parameters": {
+                "level": "int",
+                "file_name": "String",
+                "position": "int"
+            },
+            "name": "Client#hashCode",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "Client#main",
+                "Client#serverSelection",
+                "Server#main",
+                "Server#replicateFile"
+            ],
+            "children": [
+                "Server#asciiCalc",
+                "Client#asciiCalc"
+            ]
+        },
+        "Server#main": {
+            "parameters": {
+                "args": "String[]"
+            },
+            "name": "Server#main",
+            "recursive": "false",
+            "inComing": 0,
+            "outGoing": 0,
+            "numberOfCalls": 0,
+            "parents": [],
+            "children": [
+                "Server#lookup",
+                "Server#checkForOccurrence",
+                "Client#hashCode",
+                "MeanObject#equals",
+                "Client#makeConnectionToServer",
+                "MeanObject#hashCode",
+                "Server#insertFile",
+                "Server#makeConnectionToServer",
+                "Server#hashCode"
+            ]
+        },
+        "Driver#testOneKind": {
+            "parameters": {},
+            "name": "Driver#testOneKind",
+            "recursive": "false",
+            "inComing": 1,
+            "outGoing": 0,
+            "numberOfCalls": 1,
+            "parents": [
+                "Driver#testIt"
+            ],
+            "children": [
+                "Driver#containsTest",
+                "Driver#sizeTest",
+                "Driver#removeTest",
+                "Driver#isEmptyTest",
+                "Driver#iteratorTest",
+                "Driver#addTest"
+            ]
+        },
+        "Driver#test": {
+            "parameters": {
+                "whichOne": "String"
+            },
+            "name": "Driver#test",
+            "recursive": "false",
+            "inComing": 2,
+            "outGoing": 0,
+            "numberOfCalls": 2,
+            "parents": [
+                "Driver#main"
+            ],
+            "children": [
+                "Driver#end",
+                "Driver#init",
+                "Driver#testIt"
+            ]
+        },
+        "ServerThread1#run": {
+            "parameters": {},
+            "name": "ServerThread1#run",
+            "recursive": "false",
+            "inComing": 0,
+            "outGoing": 0,
+            "numberOfCalls": 0,
+            "parents": [],
+            "children": [
+                "UDPServerThread4#makeDashes",
+                "ServerThread4#makeDashes",
+                "RMIServer4#makeDashes",
+                "UDPServerThread4#matchLetter",
+                "MeanObject#equals",
+                "UDPServerThread#matchLetter",
+                "MeanObject#toString",
+                "ServerInterface4#makeDashes",
+                "ServerThread1#makeDashes",
+                "RMIServer4#matchLetter",
+                "ServerThread4#matchLetter",
+                "UDPServerThread#makeDashes",
+                "ServerThread1#matchLetter"
+            ]
+        },
+        "MyIterator#remove": {
+            "parameters": {},
+            "name": "MyIterator#remove",
+            "recursive": "false",
+            "inComing": 3,
+            "outGoing": 0,
+            "numberOfCalls": 3,
+            "parents": [
+                "Driver#containsTest",
+                "Driver#removeTest",
+                "Driver#iteratorTest"
+            ],
+            "children": []
+        },
+        "Server4#select_random": {
+            "parameters": {},
+            "name": "Server4#select_random",
+            "recursive": "false",
+            "inComing": 1,
+            "outGoing": 0,
+            "numberOfCalls": 1,
+            "parents": [
+                "Server4#main"
+            ],
+            "children": [
+                "UDPServer#model1",
+                "RMIServer4#model1",
+                "UDPServer4#model1",
+                "Server4#model1"
+            ]
+        },
+        "ServerThread4#makeDashes": {
+            "parameters": {
+                "s": "String"
+            },
+            "name": "ServerThread4#makeDashes",
+            "recursive": "false",
+            "inComing": 8,
+            "outGoing": 0,
+            "numberOfCalls": 8,
+            "parents": [
+                "RMIClient1#clientmethod",
+                "RMIClient42#clientmethod",
+                "RMIClient43#clientmethod",
+                "RMIClient44#clientmethod",
+                "ServerThread1#run",
+                "ServerThread4#run",
+                "UDPServerThread#run",
+                "UDPServerThread4#run"
+            ],
+            "children": []
+        },
+        "RMIServer4#model1": {
+            "parameters": {},
+            "name": "RMIServer4#model1",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "RMIServer4#select_random",
+                "Server4#select_random",
+                "UDPServer#select_random",
+                "UDPServer4#select_random"
+            ],
+            "children": []
+        },
+        "RMIServer4#checkwithwordselected": {
+            "parameters": {
+                "guess": "String"
+            },
+            "name": "RMIServer4#checkwithwordselected",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "RMIClient1#clientmethod",
+                "RMIClient42#clientmethod",
+                "RMIClient43#clientmethod",
+                "RMIClient44#clientmethod"
+            ],
+            "children": [
+                "MeanObject#equals"
+            ]
+        },
+        "Driver#objectGenerator": {
+            "parameters": {},
+            "name": "Driver#objectGenerator",
+            "recursive": "false",
+            "inComing": 2,
+            "outGoing": 0,
+            "numberOfCalls": 2,
+            "parents": [
+                "Driver#initTest",
+                "Driver#sizeTest"
+            ],
+            "children": [
+                "Driver#generateObject",
+                "Driver#generateString",
+                "Driver#generateMeanObject"
+            ]
+        },
+        "ServerInterface4#wonthegame": {
+            "parameters": {
+                "dashes": "StringBuffer"
+            },
+            "name": "ServerInterface4#wonthegame",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "RMIClient1#clientmethod",
+                "RMIClient42#clientmethod",
+                "RMIClient43#clientmethod",
+                "RMIClient44#clientmethod"
+            ],
+            "children": []
+        },
+        "UDPServer#main": {
+            "parameters": {
+                "args": "String[]"
+            },
+            "name": "UDPServer#main",
+            "recursive": "false",
+            "inComing": 0,
+            "outGoing": 0,
+            "numberOfCalls": 0,
+            "parents": [],
+            "children": []
+        },
+        "RMIServer4#goodbadguesscheck": {
+            "parameters": {
+                "dashes": "StringBuffer",
+                "letter": "char",
+                "guesses": "String"
+            },
+            "name": "RMIServer4#goodbadguesscheck",
+            "recursive": "false",
+            "inComing": 8,
+            "outGoing": 0,
+            "numberOfCalls": 8,
+            "parents": [
+                "RMIClient1#clientmethod",
+                "RMIClient42#clientmethod",
+                "RMIClient43#clientmethod",
+                "RMIClient44#clientmethod"
+            ],
+            "children": [
+                "UDPServerThread4#matchLetter",
+                "UDPServerThread#matchLetter",
+                "RMIServer4#matchLetter",
+                "ServerThread4#matchLetter",
+                "ServerThread1#matchLetter"
+            ]
+        },
+        "RMIServer4#makeDashes": {
+            "parameters": {
+                "s": "String"
+            },
+            "name": "RMIServer4#makeDashes",
+            "recursive": "false",
+            "inComing": 8,
+            "outGoing": 0,
+            "numberOfCalls": 8,
+            "parents": [
+                "RMIClient1#clientmethod",
+                "RMIClient42#clientmethod",
+                "RMIClient43#clientmethod",
+                "RMIClient44#clientmethod",
+                "ServerThread1#run",
+                "ServerThread4#run",
+                "UDPServerThread#run",
+                "UDPServerThread4#run"
+            ],
+            "children": []
+        },
+        "UDPServer4#model1": {
+            "parameters": {},
+            "name": "UDPServer4#model1",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "RMIServer4#select_random",
+                "Server4#select_random",
+                "UDPServer#select_random",
+                "UDPServer4#select_random"
+            ],
+            "children": []
+        },
+        "ServerInterface4#checkwithwordselected": {
+            "parameters": {
+                "guess": "String"
+            },
+            "name": "ServerInterface4#checkwithwordselected",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "RMIClient1#clientmethod",
+                "RMIClient42#clientmethod",
+                "RMIClient43#clientmethod",
+                "RMIClient44#clientmethod"
+            ],
+            "children": []
+        },
+        "UDPServerThread4#matchLetter": {
+            "parameters": {
+                "dashes": "StringBuffer",
+                "port": "int",
+                "wordselected": "String",
+                "letter": "char",
+                "IPAddress": "InetAddress"
+            },
+            "name": "UDPServerThread4#matchLetter",
+            "recursive": "false",
+            "inComing": 5,
+            "outGoing": 0,
+            "numberOfCalls": 5,
+            "parents": [
+                "RMIServer4#goodbadguesscheck",
+                "ServerThread1#run",
+                "ServerThread4#run",
+                "UDPServerThread#run",
+                "UDPServerThread4#run"
+            ],
+            "children": []
+        },
+        "Client4#main": {
+            "parameters": {
+                "args": "String[]"
+            },
+            "name": "Client4#main",
+            "recursive": "false",
+            "inComing": 0,
+            "outGoing": 0,
+            "numberOfCalls": 0,
+            "parents": [],
+            "children": [
+                "MyIterator#next"
+            ]
+        },
+        "RMIServer4#returndashes": {
+            "parameters": {
+                "dashes": "StringBuffer"
+            },
+            "name": "RMIServer4#returndashes",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "RMIClient1#clientmethod",
+                "RMIClient42#clientmethod",
+                "RMIClient43#clientmethod",
+                "RMIClient44#clientmethod"
+            ],
+            "children": []
+        },
+        "ServerInterface4#counterCheck": {
+            "parameters": {
+                "a": "int"
+            },
+            "name": "ServerInterface4#counterCheck",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "RMIClient1#main",
+                "RMIClient42#main",
+                "RMIClient43#main",
+                "RMIClient44#main"
+            ],
+            "children": []
+        },
+        "RMIServer4#displayword": {
+            "parameters": {},
+            "name": "RMIServer4#displayword",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "null#null"
+            ],
+            "children": []
+        },
+        "Calculator#calculate": {
+            "parameters": {
+                "op": "char",
+                "a": "int",
+                "b": "int"
+            },
+            "name": "Calculator#calculate",
+            "recursive": "false",
+            "inComing": 6,
+            "outGoing": 0,
+            "numberOfCalls": 6,
+            "parents": [
+                "Calculator#solve",
+                "CalculatorModel#solve"
+            ],
+            "children": []
+        },
+        "Driver#initTest": {
+            "parameters": {},
+            "name": "Driver#initTest",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "Driver#addTest",
+                "Driver#containsTest",
+                "Driver#removeTest",
+                "Driver#iteratorTest"
+            ],
+            "children": [
+                "Driver#objectGenerator",
+                "HashSetNew#clear",
+                "HashSetNew#add"
+            ]
+        },
+        "MeanObject#equals": {
+            "parameters": {
+                "o": "Object"
+            },
+            "name": "MeanObject#equals",
+            "recursive": "false",
+            "inComing": 12,
+            "outGoing": 0,
+            "numberOfCalls": 12,
+            "parents": [
+                "Client#main",
+                "RMIServer4#checkwithwordselected",
+                "RMIServer4#wonthegame",
+                "Server#main",
+                "ServerThread1#run",
+                "ServerThread4#run",
+                "UDPServerThread#run",
+                "UDPServerThread4#run"
+            ],
+            "children": []
+        },
+        "MyIterator#next": {
+            "parameters": {},
+            "name": "MyIterator#next",
+            "recursive": "false",
+            "inComing": 8,
+            "outGoing": 0,
+            "numberOfCalls": 8,
+            "parents": [
+                "Client4#main",
+                "Driver#iteratorTest",
+                "RMIClient1#clientmethod",
+                "RMIClient42#clientmethod",
+                "RMIClient43#clientmethod",
+                "RMIClient44#clientmethod",
+                "UDPClient#main",
+                "UDPClient4#main"
+            ],
+            "children": []
+        },
+        "ServerInterface4#comparescore": {
+            "parameters": {},
+            "name": "ServerInterface4#comparescore",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "RMIClient1#clientmethod",
+                "RMIClient42#clientmethod",
+                "RMIClient43#clientmethod",
+                "RMIClient44#clientmethod"
+            ],
+            "children": []
+        },
+        "UDPServerThread#matchLetter": {
+            "parameters": {
+                "dashes": "StringBuffer",
+                "port": "int",
+                "wordselected": "String",
+                "letter": "char",
+                "IPAddress": "InetAddress"
+            },
+            "name": "UDPServerThread#matchLetter",
+            "recursive": "false",
+            "inComing": 5,
+            "outGoing": 0,
+            "numberOfCalls": 5,
+            "parents": [
+                "RMIServer4#goodbadguesscheck",
+                "ServerThread1#run",
+                "ServerThread4#run",
+                "UDPServerThread#run",
+                "UDPServerThread4#run"
+            ],
+            "children": []
+        },
+        "Client#makeConnectionToServer": {
+            "parameters": {
+                "server_name": "String"
+            },
+            "name": "Client#makeConnectionToServer",
+            "recursive": "false",
+            "inComing": 3,
+            "outGoing": 0,
+            "numberOfCalls": 3,
+            "parents": [
+                "Client#main",
+                "Server#main"
+            ],
+            "children": []
+        },
+        "Subsets#subset": {
+            "parameters": {
+                "str": "String",
+                "index": "int",
+                "substr": "String"
+            },
+            "name": "Subsets#subset",
+            "recursive": "false",
+            "inComing": 2,
+            "outGoing": 0,
+            "numberOfCalls": 2,
+            "parents": [
+                "Subsets#main",
+                "Subsets#subset"
+            ],
+            "children": [
+                "Subsets#subset"
+            ]
+        },
+        "CalculatorView#display": {
+            "parameters": {},
+            "name": "CalculatorView#display",
+            "recursive": "false",
+            "inComing": 1,
+            "outGoing": 0,
+            "numberOfCalls": 1,
+            "parents": [
+                "MVCCalculatorDemo#main"
+            ],
+            "children": []
+        },
+        "MeanObject#toString": {
+            "parameters": {},
+            "name": "MeanObject#toString",
+            "recursive": "false",
+            "inComing": 9,
+            "outGoing": 0,
+            "numberOfCalls": 9,
+            "parents": [
+                "Calculator#solve",
+                "Driver#generateString",
+                "CalculatorModel#solve",
+                "RMIServer4#wonthegame",
+                "Server#insertFile",
+                "ServerThread1#run",
+                "ServerThread4#run",
+                "UDPServerThread#run",
+                "UDPServerThread4#run"
+            ],
+            "children": []
+        },
+        "HashSetNew#iterator": {
+            "parameters": {},
+            "name": "HashSetNew#iterator",
+            "recursive": "false",
+            "inComing": 1,
+            "outGoing": 0,
+            "numberOfCalls": 1,
+            "parents": [
+                "Driver#iteratorTest"
+            ],
+            "children": []
+        },
+        "Driver#sizeTest": {
+            "parameters": {},
+            "name": "Driver#sizeTest",
+            "recursive": "false",
+            "inComing": 1,
+            "outGoing": 0,
+            "numberOfCalls": 1,
+            "parents": [
+                "Driver#testOneKind"
+            ],
+            "children": [
+                "Driver#objectGenerator",
+                "HashSetNew#clear",
+                "HashSetNew#contains",
+                "HashSetNew#size",
+                "HashSetNew#add"
+            ]
+        },
+        "HashSetNew#isEmpty": {
+            "parameters": {},
+            "name": "HashSetNew#isEmpty",
+            "recursive": "false",
+            "inComing": 2,
+            "outGoing": 0,
+            "numberOfCalls": 2,
+            "parents": [
+                "Driver#isEmptyTest",
+                "HashSetNew#add"
+            ],
+            "children": []
+        },
+        "RMIServer4#returnscore": {
+            "parameters": {},
+            "name": "RMIServer4#returnscore",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "RMIClient1#clientmethod",
+                "RMIClient42#clientmethod",
+                "RMIClient43#clientmethod",
+                "RMIClient44#clientmethod"
+            ],
+            "children": []
+        },
+        "Driver#generateObject": {
+            "parameters": {},
+            "name": "Driver#generateObject",
+            "recursive": "false",
+            "inComing": 1,
+            "outGoing": 0,
+            "numberOfCalls": 1,
+            "parents": [
+                "Driver#objectGenerator"
+            ],
+            "children": []
+        },
+        "Driver#generateString": {
+            "parameters": {},
+            "name": "Driver#generateString",
+            "recursive": "false",
+            "inComing": 1,
+            "outGoing": 0,
+            "numberOfCalls": 1,
+            "parents": [
+                "Driver#objectGenerator"
+            ],
+            "children": [
+                "MeanObject#toString"
+            ]
+        },
+        "HashSetNew#remove": {
+            "parameters": {
+                "item": "Object"
+            },
+            "name": "HashSetNew#remove",
+            "recursive": "false",
+            "inComing": 3,
+            "outGoing": 0,
+            "numberOfCalls": 3,
+            "parents": [
+                "Driver#containsTest",
+                "Driver#removeTest",
+                "Driver#iteratorTest"
+            ],
+            "children": [
+                "HashSetNew#size"
+            ]
+        },
+        "UDPServerThread#run": {
+            "parameters": {},
+            "name": "UDPServerThread#run",
+            "recursive": "false",
+            "inComing": 0,
+            "outGoing": 0,
+            "numberOfCalls": 0,
+            "parents": [],
+            "children": [
+                "UDPServerThread4#makeDashes",
+                "ServerThread4#makeDashes",
+                "RMIServer4#makeDashes",
+                "UDPServerThread4#matchLetter",
+                "MeanObject#equals",
+                "UDPServerThread#matchLetter",
+                "MeanObject#toString",
+                "ServerInterface4#makeDashes",
+                "ServerThread1#makeDashes",
+                "RMIServer4#matchLetter",
+                "ServerThread4#matchLetter",
+                "UDPServerThread#makeDashes",
+                "ServerThread1#matchLetter"
+            ]
+        },
+        "HashSetNew#clear": {
+            "parameters": {},
+            "name": "HashSetNew#clear",
+            "recursive": "false",
+            "inComing": 3,
+            "outGoing": 0,
+            "numberOfCalls": 3,
+            "parents": [
+                "Driver#initTest",
+                "Driver#isEmptyTest",
+                "Driver#sizeTest"
+            ],
+            "children": []
+        },
+        "RMIServer4#select_random": {
+            "parameters": {},
+            "name": "RMIServer4#select_random",
+            "recursive": "false",
+            "inComing": 1,
+            "outGoing": 0,
+            "numberOfCalls": 1,
+            "parents": [
+                "Server4#main"
+            ],
+            "children": [
+                "UDPServer#model1",
+                "RMIServer4#model1",
+                "UDPServer4#model1",
+                "Server4#model1"
+            ]
+        },
+        "RMIClient44#clientmethod": {
+            "parameters": {},
+            "name": "RMIClient44#clientmethod",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "RMIClient1#main",
+                "RMIClient42#main",
+                "RMIClient43#main",
+                "RMIClient44#main"
+            ],
+            "children": [
+                "UDPServerThread4#makeDashes",
+                "RMIServer4#putscore",
+                "ServerThread4#makeDashes",
+                "RMIServer4#checkwithwordselected",
+                "ServerInterface4#wonthegame",
+                "RMIServer4#goodbadguesscheck",
+                "RMIServer4#makeDashes",
+                "ServerInterface4#checkwithwordselected",
+                "RMIServer4#returndashes",
+                "MyIterator#next",
+                "ServerInterface4#comparescore",
+                "RMIServer4#returnscore",
+                "ServerInterface4#scoreandword",
+                "RMIServer4#displayguesses",
+                "RMIServer4#returndone",
+                "ServerInterface4#returnscore",
+                "ServerInterface4#makeDashes",
+                "ServerInterface4#putscore",
+                "ServerInterface4#displayguesses",
+                "ServerInterface4#returndashes",
+                "ServerInterface4#returndone",
+                "ServerInterface4#displaychances",
+                "ServerThread1#makeDashes",
+                "HashSetNew#contains",
+                "RMIServer4#comparescore",
+                "ServerInterface4#goodbadguesscheck",
+                "RMIServer4#displaychances",
+                "RMIServer4#wonthegame",
+                "UDPServerThread#makeDashes",
+                "RMIServer4#scoreandword"
+            ]
+        },
+        "Server4#main": {
+            "parameters": {
+                "args": "String[]"
+            },
+            "name": "Server4#main",
+            "recursive": "false",
+            "inComing": 0,
+            "outGoing": 0,
+            "numberOfCalls": 0,
+            "parents": [],
+            "children": [
+                "Server4#select_random",
+                "RMIServer4#select_random",
+                "UDPServer4#select_random",
+                "UDPServer#select_random"
+            ]
+        },
+        "Driver#removeTest": {
+            "parameters": {},
+            "name": "Driver#removeTest",
+            "recursive": "false",
+            "inComing": 1,
+            "outGoing": 0,
+            "numberOfCalls": 1,
+            "parents": [
+                "Driver#testOneKind"
+            ],
+            "children": [
+                "MyIterator#remove",
+                "Driver#initTest",
+                "HashSetNew#remove",
+                "HashSetNew#contains",
+                "HashSetNew#size"
+            ]
+        },
+        "ServerInterface4#scoreandword": {
+            "parameters": {},
+            "name": "ServerInterface4#scoreandword",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "RMIClient1#clientmethod",
+                "RMIClient42#clientmethod",
+                "RMIClient43#clientmethod",
+                "RMIClient44#clientmethod"
+            ],
+            "children": []
+        },
+        "MeanObject#hashCode": {
+            "parameters": {},
+            "name": "MeanObject#hashCode",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "Client#main",
+                "Client#serverSelection",
+                "Server#main",
+                "Server#replicateFile"
+            ],
+            "children": []
+        },
+        "RMIServer4#displayguesses": {
+            "parameters": {
+                "guesses": "String"
+            },
+            "name": "RMIServer4#displayguesses",
+            "recursive": "false",
+            "inComing": 8,
+            "outGoing": 0,
+            "numberOfCalls": 8,
+            "parents": [
+                "RMIClient1#clientmethod",
+                "RMIClient42#clientmethod",
+                "RMIClient43#clientmethod",
+                "RMIClient44#clientmethod"
+            ],
+            "children": []
+        },
+        "Calculator#checkPrecedence": {
+            "parameters": {
+                "opr1": "char",
+                "opr2": "char"
+            },
+            "name": "Calculator#checkPrecedence",
+            "recursive": "false",
+            "inComing": 2,
+            "outGoing": 0,
+            "numberOfCalls": 2,
+            "parents": [
+                "Calculator#solve",
+                "CalculatorModel#solve"
+            ],
+            "children": []
+        },
+        "RMIServer4#main": {
+            "parameters": {
+                "args": "String[]"
+            },
+            "name": "RMIServer4#main",
+            "recursive": "false",
+            "inComing": 0,
+            "outGoing": 0,
+            "numberOfCalls": 0,
+            "parents": [],
+            "children": []
+        },
+        "RMIClient1#main": {
+            "parameters": {
+                "args": "String[]"
+            },
+            "name": "RMIClient1#main",
+            "recursive": "false",
+            "inComing": 0,
+            "outGoing": 0,
+            "numberOfCalls": 0,
+            "parents": [],
+            "children": [
+                "RMIClient42#clientmethod",
+                "ServerInterface4#counterCheck",
+                "RMIClient44#clientmethod",
+                "RMIClient43#clientmethod",
+                "HashSetNew#contains",
+                "RMIServer4#counterCheck",
+                "RMIClient1#clientmethod"
+            ]
+        },
+        "Driver#isEmptyTest": {
+            "parameters": {},
+            "name": "Driver#isEmptyTest",
+            "recursive": "false",
+            "inComing": 1,
+            "outGoing": 0,
+            "numberOfCalls": 1,
+            "parents": [
+                "Driver#testOneKind"
+            ],
+            "children": [
+                "HashSetNew#isEmpty",
+                "HashSetNew#clear"
+            ]
+        },
+        "UDPClient#main": {
+            "parameters": {
+                "args": "String[]"
+            },
+            "name": "UDPClient#main",
+            "recursive": "false",
+            "inComing": 0,
+            "outGoing": 0,
+            "numberOfCalls": 0,
+            "parents": [],
+            "children": [
+                "MyIterator#next"
+            ]
+        },
+        "Driver#init": {
+            "parameters": {},
+            "name": "Driver#init",
+            "recursive": "false",
+            "inComing": 1,
+            "outGoing": 0,
+            "numberOfCalls": 1,
+            "parents": [
+                "Driver#test"
+            ],
+            "children": []
+        },
+        "RMIServer4#returndone": {
+            "parameters": {},
+            "name": "RMIServer4#returndone",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "RMIClient1#clientmethod",
+                "RMIClient42#clientmethod",
+                "RMIClient43#clientmethod",
+                "RMIClient44#clientmethod"
+            ],
+            "children": []
+        },
+        "ServerInterface4#returnscore": {
+            "parameters": {},
+            "name": "ServerInterface4#returnscore",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "RMIClient1#clientmethod",
+                "RMIClient42#clientmethod",
+                "RMIClient43#clientmethod",
+                "RMIClient44#clientmethod"
+            ],
+            "children": []
+        },
+        "ServerInterface4#makeDashes": {
+            "parameters": {
+                "s": "String"
+            },
+            "name": "ServerInterface4#makeDashes",
+            "recursive": "false",
+            "inComing": 8,
+            "outGoing": 0,
+            "numberOfCalls": 8,
+            "parents": [
+                "RMIClient1#clientmethod",
+                "RMIClient42#clientmethod",
+                "RMIClient43#clientmethod",
+                "RMIClient44#clientmethod",
+                "ServerThread1#run",
+                "ServerThread4#run",
+                "UDPServerThread#run",
+                "UDPServerThread4#run"
+            ],
+            "children": []
+        },
+        "Server4#model1": {
+            "parameters": {},
+            "name": "Server4#model1",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "RMIServer4#select_random",
+                "Server4#select_random",
+                "UDPServer#select_random",
+                "UDPServer4#select_random"
+            ],
+            "children": []
+        },
+        "Server#insertInMap": {
+            "parameters": {
+                "file_name": "String"
+            },
+            "name": "Server#insertInMap",
+            "recursive": "false",
+            "inComing": 0,
+            "outGoing": 0,
+            "numberOfCalls": 0,
+            "parents": [],
+            "children": []
+        },
+        "Driver#iteratorTest": {
+            "parameters": {},
+            "name": "Driver#iteratorTest",
+            "recursive": "false",
+            "inComing": 1,
+            "outGoing": 0,
+            "numberOfCalls": 1,
+            "parents": [
+                "Driver#testOneKind"
+            ],
+            "children": [
+                "MyIterator#hasNext",
+                "MyIterator#remove",
+                "Driver#initTest",
+                "MyIterator#next",
+                "HashSetNew#iterator",
+                "HashSetNew#remove"
+            ]
+        },
+        "ServerInterface4#putscore": {
+            "parameters": {
+                "score": "int",
+                "index": "int"
+            },
+            "name": "ServerInterface4#putscore",
+            "recursive": "false",
+            "inComing": 8,
+            "outGoing": 0,
+            "numberOfCalls": 8,
+            "parents": [
+                "RMIClient1#clientmethod",
+                "RMIClient42#clientmethod",
+                "RMIClient43#clientmethod",
+                "RMIClient44#clientmethod"
+            ],
+            "children": []
+        },
+        "UDPServer4#select_random": {
+            "parameters": {},
+            "name": "UDPServer4#select_random",
+            "recursive": "false",
+            "inComing": 1,
+            "outGoing": 0,
+            "numberOfCalls": 1,
+            "parents": [
+                "Server4#main"
+            ],
+            "children": [
+                "UDPServer#model1",
+                "RMIServer4#model1",
+                "UDPServer4#model1",
+                "Server4#model1"
+            ]
+        },
+        "RMIClient43#clientmethod": {
+            "parameters": {},
+            "name": "RMIClient43#clientmethod",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "RMIClient1#main",
+                "RMIClient42#main",
+                "RMIClient43#main",
+                "RMIClient44#main"
+            ],
+            "children": [
+                "UDPServerThread4#makeDashes",
+                "RMIServer4#putscore",
+                "ServerThread4#makeDashes",
+                "RMIServer4#checkwithwordselected",
+                "ServerInterface4#wonthegame",
+                "RMIServer4#goodbadguesscheck",
+                "RMIServer4#makeDashes",
+                "ServerInterface4#checkwithwordselected",
+                "RMIServer4#returndashes",
+                "MyIterator#next",
+                "ServerInterface4#comparescore",
+                "RMIServer4#returnscore",
+                "ServerInterface4#scoreandword",
+                "RMIServer4#displayguesses",
+                "RMIServer4#returndone",
+                "ServerInterface4#returnscore",
+                "ServerInterface4#makeDashes",
+                "ServerInterface4#putscore",
+                "ServerInterface4#displayguesses",
+                "ServerInterface4#returndashes",
+                "ServerInterface4#returndone",
+                "ServerInterface4#displaychances",
+                "ServerThread1#makeDashes",
+                "HashSetNew#contains",
+                "RMIServer4#comparescore",
+                "ServerInterface4#goodbadguesscheck",
+                "RMIServer4#displaychances",
+                "RMIServer4#wonthegame",
+                "UDPServerThread#makeDashes",
+                "RMIServer4#scoreandword"
+            ]
+        },
+        "Server#insertFile": {
+            "parameters": {
+                "file_name": "String",
+                "server_mapped": "String",
+                "directory": "String"
+            },
+            "name": "Server#insertFile",
+            "recursive": "false",
+            "inComing": 2,
+            "outGoing": 0,
+            "numberOfCalls": 2,
+            "parents": [
+                "Server#main",
+                "Server#replicateFile"
+            ],
+            "children": [
+                "MeanObject#toString"
+            ]
+        },
+        "Server#makeConnectionToServer": {
+            "parameters": {
+                "server_name": "String"
+            },
+            "name": "Server#makeConnectionToServer",
+            "recursive": "false",
+            "inComing": 3,
+            "outGoing": 0,
+            "numberOfCalls": 3,
+            "parents": [
+                "Client#main",
+                "Server#main"
+            ],
+            "children": []
+        },
+        "ServerInterface4#displayguesses": {
+            "parameters": {
+                "guesses": "String"
+            },
+            "name": "ServerInterface4#displayguesses",
+            "recursive": "false",
+            "inComing": 8,
+            "outGoing": 0,
+            "numberOfCalls": 8,
+            "parents": [
+                "RMIClient1#clientmethod",
+                "RMIClient42#clientmethod",
+                "RMIClient43#clientmethod",
+                "RMIClient44#clientmethod"
+            ],
+            "children": []
+        },
+        "CalculatorController#callModel": {
+            "parameters": {
+                "input": "String"
+            },
+            "name": "CalculatorController#callModel",
+            "recursive": "false",
+            "inComing": 1,
+            "outGoing": 0,
+            "numberOfCalls": 1,
+            "parents": [
+                "MVCCalculatorDemo#main"
+            ],
+            "children": [
+                "CalculatorModel#solve",
+                "Calculator#solve"
+            ]
+        },
+        "ServerInterface4#returndashes": {
+            "parameters": {
+                "dashes": "StringBuffer"
+            },
+            "name": "ServerInterface4#returndashes",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "RMIClient1#clientmethod",
+                "RMIClient42#clientmethod",
+                "RMIClient43#clientmethod",
+                "RMIClient44#clientmethod"
+            ],
+            "children": []
+        },
+        "UDPClient4#main": {
+            "parameters": {
+                "args": "String[]"
+            },
+            "name": "UDPClient4#main",
+            "recursive": "false",
+            "inComing": 0,
+            "outGoing": 0,
+            "numberOfCalls": 0,
+            "parents": [],
+            "children": [
+                "MyIterator#next"
+            ]
+        },
+        "ServerInterface4#returndone": {
+            "parameters": {},
+            "name": "ServerInterface4#returndone",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "RMIClient1#clientmethod",
+                "RMIClient42#clientmethod",
+                "RMIClient43#clientmethod",
+                "RMIClient44#clientmethod"
+            ],
+            "children": []
+        },
+        "Server#hashCode": {
+            "parameters": {
+                "level": "int",
+                "file_name": "String",
+                "position": "int"
+            },
+            "name": "Server#hashCode",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "Client#main",
+                "Client#serverSelection",
+                "Server#main",
+                "Server#replicateFile"
+            ],
+            "children": [
+                "Server#asciiCalc",
+                "Client#asciiCalc"
+            ]
+        },
+        "ServerInterface4#displaychances": {
+            "parameters": {
+                "chances": "int"
+            },
+            "name": "ServerInterface4#displaychances",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "RMIClient1#clientmethod",
+                "RMIClient42#clientmethod",
+                "RMIClient43#clientmethod",
+                "RMIClient44#clientmethod"
+            ],
+            "children": []
+        },
+        "CalculatorModel#calculate": {
+            "parameters": {
+                "op": "char",
+                "a": "int",
+                "b": "int"
+            },
+            "name": "CalculatorModel#calculate",
+            "recursive": "false",
+            "inComing": 6,
+            "outGoing": 0,
+            "numberOfCalls": 6,
+            "parents": [
+                "Calculator#solve",
+                "CalculatorModel#solve"
+            ],
+            "children": []
+        },
+        "CalculatorView#displayanswer": {
+            "parameters": {
+                "answer": "int"
+            },
+            "name": "CalculatorView#displayanswer",
+            "recursive": "false",
+            "inComing": 1,
+            "outGoing": 0,
+            "numberOfCalls": 1,
+            "parents": [
+                "MVCCalculatorDemo#main"
+            ],
+            "children": []
+        },
+        "ServerThread4#run": {
+            "parameters": {},
+            "name": "ServerThread4#run",
+            "recursive": "false",
+            "inComing": 0,
+            "outGoing": 0,
+            "numberOfCalls": 0,
+            "parents": [],
+            "children": [
+                "UDPServerThread4#makeDashes",
+                "ServerThread4#makeDashes",
+                "RMIServer4#makeDashes",
+                "UDPServerThread4#matchLetter",
+                "MeanObject#equals",
+                "UDPServerThread#matchLetter",
+                "MeanObject#toString",
+                "ServerInterface4#makeDashes",
+                "ServerThread1#makeDashes",
+                "RMIServer4#matchLetter",
+                "ServerThread4#matchLetter",
+                "UDPServerThread#makeDashes",
+                "ServerThread1#matchLetter"
+            ]
+        },
+        "ServerThread1#makeDashes": {
+            "parameters": {
+                "s": "String"
+            },
+            "name": "ServerThread1#makeDashes",
+            "recursive": "false",
+            "inComing": 8,
+            "outGoing": 0,
+            "numberOfCalls": 8,
+            "parents": [
+                "RMIClient1#clientmethod",
+                "RMIClient42#clientmethod",
+                "RMIClient43#clientmethod",
+                "RMIClient44#clientmethod",
+                "ServerThread1#run",
+                "ServerThread4#run",
+                "UDPServerThread#run",
+                "UDPServerThread4#run"
+            ],
+            "children": []
+        },
+        "Driver#addTest": {
+            "parameters": {},
+            "name": "Driver#addTest",
+            "recursive": "false",
+            "inComing": 1,
+            "outGoing": 0,
+            "numberOfCalls": 1,
+            "parents": [
+                "Driver#testOneKind"
+            ],
+            "children": [
+                "Driver#initTest",
+                "HashSetNew#size",
+                "HashSetNew#add"
+            ]
+        },
+        "Driver#main": {
+            "parameters": {
+                "args": "String[]"
+            },
+            "name": "Driver#main",
+            "recursive": "false",
+            "inComing": 0,
+            "outGoing": 0,
+            "numberOfCalls": 0,
+            "parents": [],
+            "children": [
+                "Driver#test"
+            ]
+        },
+        "HashSetNew#contains": {
+            "parameters": {
+                "item": "Object"
+            },
+            "name": "HashSetNew#contains",
+            "recursive": "false",
+            "inComing": 12,
+            "outGoing": 0,
+            "numberOfCalls": 12,
+            "parents": [
+                "Driver#containsTest",
+                "Driver#sizeTest",
+                "Driver#removeTest",
+                "RMIClient1#main",
+                "RMIClient1#clientmethod",
+                "RMIClient42#main",
+                "RMIClient42#clientmethod",
+                "RMIClient43#main",
+                "RMIClient43#clientmethod",
+                "RMIClient44#main",
+                "RMIClient44#clientmethod"
+            ],
+            "children": [
+                "HashSetNew#size"
+            ]
+        },
+        "UDPServer#select_random": {
+            "parameters": {},
+            "name": "UDPServer#select_random",
+            "recursive": "false",
+            "inComing": 1,
+            "outGoing": 0,
+            "numberOfCalls": 1,
+            "parents": [
+                "Server4#main"
+            ],
+            "children": [
+                "UDPServer#model1",
+                "RMIServer4#model1",
+                "UDPServer4#model1",
+                "Server4#model1"
+            ]
+        },
+        "Driver#generateMeanObject": {
+            "parameters": {},
+            "name": "Driver#generateMeanObject",
+            "recursive": "false",
+            "inComing": 1,
+            "outGoing": 0,
+            "numberOfCalls": 1,
+            "parents": [
+                "Driver#objectGenerator"
+            ],
+            "children": []
+        },
+        "RMIServer4#comparescore": {
+            "parameters": {},
+            "name": "RMIServer4#comparescore",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "RMIClient1#clientmethod",
+                "RMIClient42#clientmethod",
+                "RMIClient43#clientmethod",
+                "RMIClient44#clientmethod"
+            ],
+            "children": []
+        },
+        "Calculator#solve": {
+            "parameters": {
+                "input": "String"
+            },
+            "name": "Calculator#solve",
+            "recursive": "false",
+            "inComing": 2,
+            "outGoing": 0,
+            "numberOfCalls": 2,
+            "parents": [
+                "Calculator#main",
+                "CalculatorController#callModel"
+            ],
+            "children": [
+                "CalculatorModel#checkPrecedence",
+                "Calculator#calculate",
+                "MeanObject#toString",
+                "Calculator#checkPrecedence",
+                "CalculatorModel#calculate"
+            ]
+        },
+        "RMIServer4#matchLetter": {
+            "parameters": {
+                "dashes": "StringBuffer",
+                "wordselected": "String",
+                "letter": "char"
+            },
+            "name": "RMIServer4#matchLetter",
+            "recursive": "false",
+            "inComing": 5,
+            "outGoing": 0,
+            "numberOfCalls": 5,
+            "parents": [
+                "RMIServer4#goodbadguesscheck",
+                "ServerThread1#run",
+                "ServerThread4#run",
+                "UDPServerThread#run",
+                "UDPServerThread4#run"
+            ],
+            "children": []
+        },
+        "ServerInterface4#goodbadguesscheck": {
+            "parameters": {
+                "dashes": "StringBuffer",
+                "letter": "char",
+                "guesses": "String"
+            },
+            "name": "ServerInterface4#goodbadguesscheck",
+            "recursive": "false",
+            "inComing": 8,
+            "outGoing": 0,
+            "numberOfCalls": 8,
+            "parents": [
+                "RMIClient1#clientmethod",
+                "RMIClient42#clientmethod",
+                "RMIClient43#clientmethod",
+                "RMIClient44#clientmethod"
+            ],
+            "children": []
+        },
+        "RMIClient44#main": {
+            "parameters": {
+                "args": "String[]"
+            },
+            "name": "RMIClient44#main",
+            "recursive": "false",
+            "inComing": 0,
+            "outGoing": 0,
+            "numberOfCalls": 0,
+            "parents": [],
+            "children": [
+                "RMIClient42#clientmethod",
+                "ServerInterface4#counterCheck",
+                "RMIClient44#clientmethod",
+                "RMIClient43#clientmethod",
+                "HashSetNew#contains",
+                "RMIServer4#counterCheck",
+                "RMIClient1#clientmethod"
+            ]
+        },
+        "RMIServer4#displaychances": {
+            "parameters": {
+                "chances": "int"
+            },
+            "name": "RMIServer4#displaychances",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "RMIClient1#clientmethod",
+                "RMIClient42#clientmethod",
+                "RMIClient43#clientmethod",
+                "RMIClient44#clientmethod"
+            ],
+            "children": []
+        },
+        "UDPServer4#main": {
+            "parameters": {
+                "args": "String[]"
+            },
+            "name": "UDPServer4#main",
+            "recursive": "false",
+            "inComing": 0,
+            "outGoing": 0,
+            "numberOfCalls": 0,
+            "parents": [],
+            "children": []
+        },
+        "Client#serverSelection": {
+            "parameters": {
+                "level": "int",
+                "file_name": "String",
+                "position": "int"
+            },
+            "name": "Client#serverSelection",
+            "recursive": "false",
+            "inComing": 1,
+            "outGoing": 0,
+            "numberOfCalls": 1,
+            "parents": [
+                "Client#main"
+            ],
+            "children": [
+                "Client#hashCode",
+                "MeanObject#hashCode",
+                "Server#hashCode"
+            ]
+        },
+        "Client#main": {
+            "parameters": {
+                "args": "String[]"
+            },
+            "name": "Client#main",
+            "recursive": "false",
+            "inComing": 0,
+            "outGoing": 0,
+            "numberOfCalls": 0,
+            "parents": [],
+            "children": [
+                "Client#hashCode",
+                "MeanObject#equals",
+                "Client#makeConnectionToServer",
+                "MeanObject#hashCode",
+                "Server#makeConnectionToServer",
+                "Server#hashCode",
+                "Client#serverSelection"
+            ]
+        },
+        "RMIServer4#counterCheck": {
+            "parameters": {
+                "a": "int"
+            },
+            "name": "RMIServer4#counterCheck",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "RMIClient1#main",
+                "RMIClient42#main",
+                "RMIClient43#main",
+                "RMIClient44#main"
+            ],
+            "children": []
+        },
+        "Driver#testIt": {
+            "parameters": {
+                "whichOne": "String"
+            },
+            "name": "Driver#testIt",
+            "recursive": "false",
+            "inComing": 1,
+            "outGoing": 0,
+            "numberOfCalls": 1,
+            "parents": [
+                "Driver#test"
+            ],
+            "children": [
+                "Driver#testOneKind"
+            ]
+        },
+        "ServerThread4#matchLetter": {
+            "parameters": {
+                "dashes": "StringBuffer",
+                "wordselected": "String",
+                "letter": "char"
+            },
+            "name": "ServerThread4#matchLetter",
+            "recursive": "false",
+            "inComing": 5,
+            "outGoing": 0,
+            "numberOfCalls": 5,
+            "parents": [
+                "RMIServer4#goodbadguesscheck",
+                "ServerThread1#run",
+                "ServerThread4#run",
+                "UDPServerThread#run",
+                "UDPServerThread4#run"
+            ],
+            "children": []
+        },
+        "RMIServer4#wonthegame": {
+            "parameters": {
+                "dashes": "StringBuffer"
+            },
+            "name": "RMIServer4#wonthegame",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "RMIClient1#clientmethod",
+                "RMIClient42#clientmethod",
+                "RMIClient43#clientmethod",
+                "RMIClient44#clientmethod"
+            ],
+            "children": [
+                "MeanObject#equals",
+                "MeanObject#toString"
+            ]
+        },
+        "HashSetNew#size": {
+            "parameters": {},
+            "name": "HashSetNew#size",
+            "recursive": "false",
+            "inComing": 9,
+            "outGoing": 0,
+            "numberOfCalls": 9,
+            "parents": [
+                "Driver#addTest",
+                "Driver#sizeTest",
+                "Driver#removeTest",
+                "HashSetNew#contains",
+                "HashSetNew#remove"
+            ],
+            "children": []
+        },
+        "ServerInterface4#displayword": {
+            "parameters": {},
+            "name": "ServerInterface4#displayword",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "null#null"
+            ],
+            "children": []
+        },
+        "UDPServerThread#makeDashes": {
+            "parameters": {
+                "s": "String"
+            },
+            "name": "UDPServerThread#makeDashes",
+            "recursive": "false",
+            "inComing": 8,
+            "outGoing": 0,
+            "numberOfCalls": 8,
+            "parents": [
+                "RMIClient1#clientmethod",
+                "RMIClient42#clientmethod",
+                "RMIClient43#clientmethod",
+                "RMIClient44#clientmethod",
+                "ServerThread1#run",
+                "ServerThread4#run",
+                "UDPServerThread#run",
+                "UDPServerThread4#run"
+            ],
+            "children": []
+        },
+        "RMIServer4#scoreandword": {
+            "parameters": {},
+            "name": "RMIServer4#scoreandword",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "RMIClient1#clientmethod",
+                "RMIClient42#clientmethod",
+                "RMIClient43#clientmethod",
+                "RMIClient44#clientmethod"
+            ],
+            "children": []
+        },
+        "RMIClient1#clientmethod": {
+            "parameters": {},
+            "name": "RMIClient1#clientmethod",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "RMIClient1#main",
+                "RMIClient42#main",
+                "RMIClient43#main",
+                "RMIClient44#main"
+            ],
+            "children": [
+                "UDPServerThread4#makeDashes",
+                "RMIServer4#putscore",
+                "ServerThread4#makeDashes",
+                "RMIServer4#checkwithwordselected",
+                "ServerInterface4#wonthegame",
+                "RMIServer4#goodbadguesscheck",
+                "RMIServer4#makeDashes",
+                "ServerInterface4#checkwithwordselected",
+                "RMIServer4#returndashes",
+                "MyIterator#next",
+                "ServerInterface4#comparescore",
+                "RMIServer4#returnscore",
+                "ServerInterface4#scoreandword",
+                "RMIServer4#displayguesses",
+                "RMIServer4#returndone",
+                "ServerInterface4#returnscore",
+                "ServerInterface4#makeDashes",
+                "ServerInterface4#putscore",
+                "ServerInterface4#displayguesses",
+                "ServerInterface4#returndashes",
+                "ServerInterface4#returndone",
+                "ServerInterface4#displaychances",
+                "ServerThread1#makeDashes",
+                "HashSetNew#contains",
+                "RMIServer4#comparescore",
+                "ServerInterface4#goodbadguesscheck",
+                "RMIServer4#displaychances",
+                "RMIServer4#wonthegame",
+                "UDPServerThread#makeDashes",
+                "RMIServer4#scoreandword"
+            ]
+        },
+        "ServerThread1#matchLetter": {
+            "parameters": {
+                "dashes": "StringBuffer",
+                "wordselected": "String",
+                "letter": "char"
+            },
+            "name": "ServerThread1#matchLetter",
+            "recursive": "false",
+            "inComing": 5,
+            "outGoing": 0,
+            "numberOfCalls": 5,
+            "parents": [
+                "RMIServer4#goodbadguesscheck",
+                "ServerThread1#run",
+                "ServerThread4#run",
+                "UDPServerThread#run",
+                "UDPServerThread4#run"
+            ],
+            "children": []
+        },
+        "HashSetNew#add": {
+            "parameters": {
+                "item": "Object"
+            },
+            "name": "HashSetNew#add",
+            "recursive": "false",
+            "inComing": 4,
+            "outGoing": 0,
+            "numberOfCalls": 4,
+            "parents": [
+                "Driver#initTest",
+                "Driver#addTest",
+                "Driver#sizeTest"
+            ],
+            "children": [
+                "HashSetNew#isEmpty"
+            ]
+        },
+        "UDPServerThread4#run": {
+            "parameters": {},
+            "name": "UDPServerThread4#run",
+            "recursive": "false",
+            "inComing": 0,
+            "outGoing": 0,
+            "numberOfCalls": 0,
+            "parents": [],
+            "children": [
+                "UDPServerThread4#makeDashes",
+                "ServerThread4#makeDashes",
+                "RMIServer4#makeDashes",
+                "UDPServerThread4#matchLetter",
+                "MeanObject#equals",
+                "UDPServerThread#matchLetter",
+                "MeanObject#toString",
+                "ServerInterface4#makeDashes",
+                "ServerThread1#makeDashes",
+                "RMIServer4#matchLetter",
+                "ServerThread4#matchLetter",
+                "UDPServerThread#makeDashes",
+                "ServerThread1#matchLetter"
+            ]
+        },
+        "ServerDriver4#main": {
+            "parameters": {
+                "args": "String[]"
+            },
+            "name": "ServerDriver4#main",
+            "recursive": "false",
+            "inComing": 0,
+            "outGoing": 0,
+            "numberOfCalls": 0,
+            "parents": [],
+            "children": []
+        }
+    }
+}
