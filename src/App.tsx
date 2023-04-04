@@ -1,7 +1,16 @@
 import './App.module.scss';
 import Header from './components/header/header';
 import React, { useEffect, useState } from 'react';
-import { Box, createTheme, CssBaseline, responsiveFontSizes, ThemeProvider } from '@mui/material';
+import {
+  Box,
+  createTheme,
+  CssBaseline,
+  Drawer,
+  Modal,
+  responsiveFontSizes,
+  ThemeProvider,
+  Typography
+} from '@mui/material';
 import { ReactFlowProvider } from 'reactflow';
 import UploadButton from './components/uploadButton';
 import GraphPage from './components/graph/GraphPage';
@@ -167,14 +176,41 @@ function App() {
                     anchorEl={anchorEl}
                     handleClose={handleClose}
                   /> :
-                  <FileUploader
-                    handleChange={handleChange}
-                    name='file'
-                    types={fileTypes}
-                    style={{
-                      backgroundColor: '#000'
-                    }}
-                  />
+                  <Modal
+                    open={true}
+                  >
+                  <Box
+                    sx={{
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        width: 400,
+                        bgcolor: 'background.paper',
+                        border: '2px solid #000',
+                        boxShadow: 24,
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+
+                        pt: 2,
+                        px: 4,
+                        pb: 3,
+                      }}
+                  >
+                    <Typography variant='h5' component='h5' style={{ padding:"1rem" }}>
+                      Upload a ZIP-file
+                    </Typography>
+                    <FileUploader
+                      handleChange={handleChange}
+                      name='file'
+                      types={fileTypes}
+                      style={{
+                        backgroundColor: '#000'
+                      }}
+                    />
+                    </Box>
+                  </Modal>
               }
             </Box>
           </ReactFlowProvider>

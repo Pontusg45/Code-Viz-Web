@@ -2,7 +2,7 @@ import { Edge, MarkerType, Node } from 'reactflow';
 import { CallTree, ClassInterface, Files, FunctionInterface } from '../../interfaces/interface';
 
 const fileColor = 'rgba(100, 100, 100, 0.5)';
-const classColor = 'rgba(150, 150, 150, 0.5)';
+const classColor = 'rgba(150, 150, 150)';
 const functionColor = 'rgba(50, 50, 50, 1)';
 const textColor = "white";
 

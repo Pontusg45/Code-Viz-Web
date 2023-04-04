@@ -2,7 +2,7 @@ import { TreeItem, TreeView } from '@mui/lab';
 import { Box, Button, Checkbox, FormControlLabel } from '@mui/material';
 import React from 'react';
 import { ChevronRight, ExpandMore, Visibility, VisibilityOff } from '@mui/icons-material';
-import { ClassInterface, FileInterface, Files, LightFunctionInterface } from '../../../interfaces/interface';
+import { ClassInterface, Files, LightFunctionInterface } from '../../../interfaces/interface';
 
 
 export default function RecursiveTreeView(
@@ -16,7 +16,7 @@ export default function RecursiveTreeView(
       handleClose: any,
     }
 ) {
-  const { style, data, onClick, onCheck ,setSelectedNodes, handleClose } = props;
+  const { style, data, onClick, onCheck ,setSelectedNodes } = props;
   let i = 0;
   i++;
   const keys: string[] = [];
@@ -195,17 +195,6 @@ export default function RecursiveTreeView(
             : null
         }
       </TreeView>
-      <Button
-        onClick={() =>{
-          setSelectedNodes(selected);
-          handleClose();
-        }}
-        sx={{
-          mt: 1,
-          display: 'flex',
-          m: "auto"
-        }}
-      >Apply filter</Button>
     </Box>
   );
 }

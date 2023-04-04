@@ -10,3 +10,30 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+.ewqTBN {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  min-width: 322px;
+  max-width: 508px;
+  height: 48px;
+  border: 2px dashed #DC823D !important;
+  padding: 8px 16px 8px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-box-flex: 0;
+  flex-grow: 0;
+}
+
+.ewqTBN svg{
+  fill: #DC823D;
+  color: #DC823D;
+
+}
+
+.ewqTBN svg path {
+  fill: #DC823D;
+  color: #DC823D;
+}

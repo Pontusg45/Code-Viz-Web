@@ -21,7 +21,7 @@ function GroupNode({ id, data }: NodeProps) {
 
   return (
     <div style={{ minWidth, minHeight }}>
-      <Typography variant="h6" style={{ padding: 10, backgroundColor: "black" }}>
+      <Typography variant="h6" style={{ padding: 10, backgroundColor: "black", borderRadius:12, zIndex:1 }}>
         {data.label.split('/')[data.label.split('/').length -1]}
       </Typography>
     </div>

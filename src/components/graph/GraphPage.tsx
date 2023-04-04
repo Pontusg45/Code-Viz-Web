@@ -1,5 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import { Box, Button, Drawer, FormControlLabel, FormGroup, Modal, Popover, Switch, Tab, Tabs, Typography } from '@mui/material';
+import {
+  Box,
+  Button,
+  Drawer,
+  FormControlLabel,
+  FormGroup,
+  Modal,
+  Switch,
+  Typography
+} from '@mui/material';
 import CustomizedTreeView from '../filter/treeView/treeView';
 import FunctionInfoBox from '../functionInfo/functionInfo';
 import { ReactFlowProvider, useReactFlow, useStoreApi } from 'reactflow';
@@ -7,20 +16,6 @@ import { FunctionInterface, CallTree } from '../../interfaces/interface';
 import Graph from '../graph/graph';
 import { functionInfoWrapperStyle, totalWrapperStyle, treeWrapperStyle } from '../../styles/graphPageStyles';
 import PropTypes from 'prop-types';
-import TreeFilter from '../filter/filterTree/TreeFilter';
-import { event } from 'jquery';
-
-interface FunctionInfo {
-  name: string;
-  returnType: string;
-  parameters?: {
-    name: string;
-    type: string;
-  }[];
-  inComing?: number;
-  outGoing?: number;
-  recursive?: boolean;
-}
 
 interface Props {
   data: CallTree;
@@ -29,8 +24,7 @@ interface Props {
   handleClose: any;
 }
 
-const style = {
-};
+const style = {};
 
 function TabPanel(props: any) {
   const { children, value, index, ...other } = props;
@@ -77,7 +71,7 @@ export default function GraphPage(props: Props) {
     children: []
   });
   const [displayFunctionInfo, setDisplayFunctionInfo] = useState(true);
-  const [filteredData, setFilteredData] = useState(null);
+  const [filteredData, setFilteredData] = useState<string[] | null>(null);
   const [showUnconnected, setShowUnconnected] = useState(false);
   const store = useStoreApi();
 
@@ -85,10 +79,6 @@ export default function GraphPage(props: Props) {
     console.log('filteredData: ', filteredData);
   }, [filteredData]);
 
-  /*const [open, setOpen] = React.useState(true);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-*/
   const { zoomIn, zoomOut, setCenter } = useReactFlow();
 
   const focusNode = () => {
@@ -143,60 +133,22 @@ export default function GraphPage(props: Props) {
   return (
     <Box className='totalWrapperStyle' style={totalWrapperStyle}>
       <Box className='leftSide'>
-
         <Drawer
           id={id}
           open={open}
-          anchor={"left"}
+          anchor={'left'}
           onClose={handleClose}
         >
-          <Box sx={style}>
-            <Box
-              sx={{
-                borderBottom: 1,
-                borderColor: 'divider',
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-              }}
-            >
-              <Typography
-                id='modal-modal-title'
-                variant='h4'
-                component='h2'
-                style={{
-                  margin: 'auto',
-                  padding: '10px',
-                }}
-              >
-                Filter
-              </Typography>
-              <FormGroup>
-                <FormControlLabel
-                  control={
-                    <Switch checked={showUnconnected} />
-                  }
-                  onChange={() => setShowUnconnected(!showUnconnected)}
-                  label="Show unused methods"
-                />
-              </FormGroup>
-            </Box>
-            <Box sx={{
-              borderBottom: 1,
-              borderColor: 'divider',
-              display: 'flex',
-              justifyContent: 'space-between',
-            }}>
-            </Box>
-            <CustomizedTreeView
-              style={treeWrapperStyle}
-              data={data.tree}
-              onClick={onClick}
-              onCheck={onCheck}
-              handleClose={handleClose}
-              setSelectedNodes={setFilteredData}
-            />
-          </Box>
+          <Filter
+            anchorEl={anchorEl}
+            handleClose={handleClose}
+            showUnconnected={showUnconnected}
+            setShowUnconnected={setShowUnconnected}
+            data={data}
+            onClick={onClick}
+            onCheck={onCheck}
+            setFilteredData={setFilteredData}
+          />
         </Drawer>
         <FunctionInfoBox
           functionInfo={functionInfo}
@@ -217,8 +169,110 @@ export default function GraphPage(props: Props) {
             </ReactFlowProvider>
           </Box>
         </Box> :
-        null
+        <Modal
+          open={true}
+        >
+          <Box
+            sx={{
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              bgcolor: 'background.paper',
+              border: '2px solid #000',
+              boxShadow: 24,
+              pt: 2,
+              px: 4,
+              pb: 3
+            }}
+          >
+            <Filter
+              anchorEl={anchorEl}
+              handleClose={handleClose}
+              showUnconnected={showUnconnected}
+              setShowUnconnected={setShowUnconnected}
+              data={data}
+              onClick={onClick}
+              onCheck={onCheck}
+              setFilteredData={setFilteredData}
+            />
+            <Button
+              onClick={() =>{
+                setFilteredData([]);
+                handleClose();
+              }}
+              sx={{
+                mt: 1,
+                display: 'flex',
+                m: 'auto'
+              }}
+            >
+              Generate Graph
+            </Button>
+          </Box>
+        </Modal>
       }
+    </Box>
+  );
+}
+
+function Filter(
+  {
+    handleClose,
+    showUnconnected,
+    setShowUnconnected,
+    data,
+    onClick,
+    onCheck,
+    setFilteredData
+  }: any) {
+  return (
+    <Box sx={style}>
+      <Box
+        sx={{
+          borderBottom: 1,
+          borderColor: 'divider',
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center'
+        }}
+      >
+        <Typography
+          id='modal-modal-title'
+          variant='h4'
+          component='h2'
+          style={{
+            margin: 'auto',
+            padding: '10px'
+          }}
+        >
+          Filter
+        </Typography>
+        <FormGroup>
+          <FormControlLabel
+            control={
+              <Switch checked={showUnconnected} />
+            }
+            onChange={() => setShowUnconnected(!showUnconnected)}
+            label='Hide unused methods'
+          />
+        </FormGroup>
+      </Box>
+      <Box sx={{
+        borderBottom: 1,
+        borderColor: 'divider',
+        display: 'flex',
+        justifyContent: 'space-between'
+      }}>
+      </Box>
+      <CustomizedTreeView
+        style={treeWrapperStyle}
+        data={data.tree}
+        onClick={onClick}
+        onCheck={onCheck}
+        handleClose={handleClose}
+        setSelectedNodes={setFilteredData}
+      />
     </Box>
   );
 }

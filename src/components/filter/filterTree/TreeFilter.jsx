@@ -28,9 +28,6 @@ const TreeFilter = (props) => {
     let filtered = filterTree(data, filter);
     filtered = expandFilteredNodes(filtered, filter);
     if (filtered && filtered.children) {
-      // filtered.children.map((item) => {
-      //   expandedTemp.push(item.id);
-      // });
       expandedTemp = [];
       expandedTemp.push(...getIDsExpandFilter(filtered));
     }
